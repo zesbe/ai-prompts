@@ -1,0 +1,180 @@
+Tolong riset komprehensif & susun integration plan untuk hallowa.id agar bisa connect ke Tokopedia, Shopee, Lazada, dan TikTok Shop chat ecosystem. Tujuan: jadi moat Indonesia yang sulit di-copy global player.
+
+═══ KONTEKS BISNIS ═══
+hallowa.id = SaaS unified messaging B2B Indonesia.
+Saat ini cuma cover Meta ecosystem (WA, IG, Messenger, Threads).
+Gap kritis: marketplace integration. UMKM Indonesia mayoritas jualan
+di Tokopedia/Shopee/Lazada/TikTok Shop, dan butuh handle CS dari sana
+juga. Tanpa ini, hallowa kalah ke Qiscus (yang punya 20+ app integration).
+
+═══ CRITICAL FINDING DARI RISET 2026 ═══
+
+⚠️ SHOPEE POLICY: Per dokumentasi resmi Yellow.ai, **automated chatbot
+replies TIDAK DIIZINKAN** di Shopee Chat. Hanya live agent yang boleh
+balas. Ini constraint kritis — hallowa harus design feature untuk
+"unified inbox" (agent inbox), bukan auto-reply di Shopee.
+
+Tokopedia: ada Tokopedia Seller API tapi dokumentasinya terbatas
+publik. Butuh apply partner program.
+
+═══ DELIVERABLE YANG DIHARAPKAN ═══
+
+1. API & TECHNICAL FEASIBILITY AUDIT
+   Untuk setiap marketplace:
+   - Apakah punya official Open API/Partner Program?
+   - Endpoint apa yang available untuk chat? (read, send, webhook)
+   - Authentication method (OAuth, API key, signature)
+   - Rate limit
+   - Restrictions/policy (misal Shopee no-bot rule)
+   - SLA dari marketplace
+   - Cost (gratis? per-API-call? subscription?)
+   - Application/onboarding process untuk jadi partner
+   - Estimated time-to-approve dari apply ke approve
+
+2. PARTNERSHIP PATHWAY
+   Untuk masing-masing:
+   - Tokopedia Partner Program: contact, requirements, timeline
+   - Shopee Open Platform: apply process, approval criteria
+   - Lazada Open Platform / API: developer registration
+   - TikTok Shop Partner Center: requirements, onboarding
+   
+   Identify:
+   - Mana yang bisa apply solo (sebagai vendor SaaS)
+   - Mana yang butuh joint application dengan customer
+   - Mana yang butuh business entity Indonesia (PT/CV)
+   - Cost partnership per marketplace
+
+3. LEGAL & COMPLIANCE
+   - PDP UU 27/2022: gimana handle data customer marketplace?
+   - Marketplace ToS: bolehkah resell/forward chat ke 3rd party tool?
+   - Data residency: data customer harus di server Indonesia?
+   - PII handling: marketplace bisa share email/phone customer?
+
+4. INTEGRATION ARCHITECTURE
+   Pattern recommendations:
+   
+   A. Direct API integration (per marketplace):
+      - Pros: real-time, full control
+      - Cons: maintenance per marketplace, rate limit per platform
+   
+   B. Iframe/embed approach (kalau marketplace expose web widget):
+      - Pros: fast deploy
+      - Cons: limited customization, UX inconsistent
+   
+   C. Aggregator (pakai 3rd party seperti Anchanto, AccelByte):
+      - Pros: 1 integration cover semua marketplace
+      - Cons: vendor lock-in, cost recurring, less control
+   
+   D. Hybrid (direct untuk priority + aggregator untuk long-tail):
+      - Recommended untuk hallowa
+   
+   Saranin yang paling fit untuk hallowa.
+
+5. MVP SCOPE (per marketplace)
+   Untuk MVP fase 1 (target Q2 2026), minimum harus:
+   - [ ] Receive new message dari marketplace
+   - [ ] Display di unified inbox hallowa
+   - [ ] Reply dari hallowa ke marketplace (sebagai live agent, sesuai
+         policy)
+   - [ ] Sync conversation history
+   - [ ] Customer profile (nama, marketplace, history)
+   - [ ] Tag/label conversation
+   - [ ] Multi-agent assignment
+
+   Phase 2 (Q3):
+   - [ ] Order data sync (link conversation → order)
+   - [ ] Product catalog sync (bisa kirim product card di chat)
+   - [ ] Auto-tagging berdasarkan order status
+
+   Phase 3 (Q4):
+   - [ ] Analytics per marketplace
+   - [ ] Cross-marketplace customer profile (sama orang di
+         multi-marketplace)
+   - [ ] Performance benchmark per marketplace
+
+6. DATA MODEL ADDITION
+   - MarketplaceConnection (id, tenant_id, marketplace, shop_id,
+     credentials_encrypted, status)
+   - MarketplaceMessage (id, connection_id, external_id, conversation_id,
+     direction, payload, created_at)
+   - MarketplaceConversation (id, connection_id, external_id,
+     customer_id, last_message_at, status)
+   - MarketplaceOrder (id, connection_id, external_order_id,
+     customer_id, total, status, items_json) [phase 2+]
+
+7. BACKEND COMPLEXITY ESTIMATE
+   Per marketplace:
+   - Tokopedia: estimasi effort (man-weeks)
+   - Shopee: estimasi effort
+   - Lazada: estimasi effort
+   - TikTok Shop: estimasi effort
+   - Plus: queueing/retry untuk webhook reliability
+   - Plus: rate limit handling per marketplace
+   - Plus: error mapping (each marketplace beda format error)
+
+8. ROLLOUT PRIORITIZATION
+   Saranin order rollout:
+   - Mana yang first (paling banyak customer hallowa pakai)?
+   - Mana yang fastest to ship (paling clear API + permissive policy)?
+   - Mana yang highest revenue impact?
+   
+   Validate: survey existing hallowa customer — mana marketplace yang
+   mereka pakai paling banyak? (Anecdotal: Shopee + Tokopedia paling
+   dominan, Lazada decline, TikTok Shop fastest growing)
+
+9. ALTERNATIVE: PARTNER vs BUILD
+   Evaluate:
+   - Partner with Anchanto, AccelByte, atau Inacom (aggregator
+     marketplace Indonesia)
+   - Cost-benefit: partner cost vs build effort vs time-to-market
+   - Risk: vendor dependency vs maintenance burden
+
+10. GO-TO-MARKET (setelah ship)
+    - PR angle: "First B2B messaging platform with full Indonesia
+      marketplace integration"
+    - Pricing: marketplace integration di-push ke Pro/Enterprise tier
+      atau add-on?
+    - Customer migration: existing customer otomatis dapet, atau
+      opt-in?
+    - Onboarding flow untuk customer baru yang punya marketplace
+
+═══ COMPETITOR BENCHMARKING ═══
+
+Yang harus di-research:
+- Qiscus: punya marketplace integration apa aja? gimana cara mereka
+  expose ke customer?
+- Mekari Qontak: status marketplace integration?
+- SleekFlow: cuma global atau ada Indonesia-specific?
+- Specialized players:
+  * Krealogi (Indonesia-only marketplace aggregator)
+  * Anchanto (regional)
+  * Forstok, Jubelio (Indonesia OMS)
+- Orderfaz, Sirclo: kompetitor di Indonesia OMS yang merangkap chat?
+
+═══ MODE KERJA ═══
+- PANDU step-by-step
+- Mulai dari API feasibility audit (paling kritis)
+- Kalau API tertutup atau policy restrictive, flag & saranin
+  workaround/alternative
+- Tunggu approval gue di akhir setiap deliverable
+- Pakai skills/browser untuk akses developer docs marketplace
+
+═══ OUTPUT FINAL ═══
+
+1. marketplace-integration-feasibility.md (per marketplace)
+2. marketplace-integration-architecture.md (technical design)
+3. marketplace-integration-roadmap.md (timeline + dependencies)
+4. marketplace-integration-legal.md (compliance matrix)
+5. marketplace-integration-gtm.md (pricing, positioning, launch plan)
+
+═══ TIMING ═══
+- Riset: 1-2 minggu
+- Partner application (parallel): 4-12 minggu untuk approve
+- MVP development: 8-12 minggu setelah API approved
+- Total realistic: 4-6 bulan untuk MVP cover 2 marketplace pertama
+
+═══ BUDGET INDIKASI ═══
+- Partner fees: bervariasi (gratis sampai $500-2000/year)
+- Aggregator fee (kalau pakai): $500-3000/month subscription
+- Development: 1 backend + 0.5 frontend selama 8-12 minggu
+- Total estimasi: Rp 100-300jt all-in untuk MVP

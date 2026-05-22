@@ -1,0 +1,237 @@
+Tolong susun customer interview script & methodology untuk validate feature gap di hallowa.id sebelum invest development. Goal: dapet insight valid (bukan opinion bias) dari minimum 10 customer dalam 2 minggu.
+
+═══ KONTEKS ═══
+hallowa.id udah identifikasi 30+ feature gap vs kompetitor. Tapi sebelum
+build, harus validate: mana gap yang BENAR-BENAR dibutuhin customer,
+mana yang cuma asumsi internal? Statistic: 50% feature yang di-build
+SaaS gak dipakai customer (sumber: Pendo).
+
+═══ FRAMEWORK YANG DIPAKAI ═══
+
+1. The Mom Test (Rob Fitzpatrick) — 3 aturan emas:
+   - Talk about their LIFE, not your idea
+   - Ask about SPECIFIC PAST behavior, not opinions/future
+   - Talk LESS, listen MORE
+
+2. Jobs To Be Done (JTBD) framework:
+   - Customers don't buy products, they "hire" them for a job
+   - Identify "job" yang hallowa hire-d untuk lakuin
+   - Identify "job" yang TIDAK ter-cover saat ini
+
+3. Commitment-based validation:
+   - Compliments are worthless. Get COMMITMENT signals:
+     * Time (mau interview lagi 30 menit minggu depan)
+     * Reputation (introduce ke peer mereka)
+     * Cash (mau beta-pay untuk early access)
+   - Tanpa komitmen, "iya gue mau pakai" = noise
+
+═══ DELIVERABLE YANG DIHARAPKAN ═══
+
+1. INTERVIEW SCRIPT (3 versi)
+
+   VERSI A: Existing Hallowa Customer (paling penting)
+   Tujuan: identify what they actually use, what's missing, churn risk
+   
+   Questions:
+   - "Ceritain ke gue tentang terakhir kali lo handle customer chat
+     di [marketplace tertentu / channel tertentu]. Step by step."
+   - "Apa yang paling annoying dari proses itu?"
+   - "Apa yang lo lakuin saat hallowa GAK bisa handle situasi itu?"
+   - "Workaround apa yang lo punya sekarang?"
+   - "Tool lain yang lo masih pakai selain hallowa? Untuk apa?"
+   - "Kalau hallowa shutdown besok, apa yang lo lakuin?" (urgency)
+   - "Pernah pertimbangkan switch ke kompetitor? Yang mana? Kenapa
+     gak switch?"
+   - "Last 30 hari, ada moment di mana lo frustrated dengan hallowa?"
+     (specific past behavior)
+   
+   Avoid:
+   - "Apa pendapat lo tentang fitur X?" (opinion)
+   - "Kalau hallowa punya fitur Y, lo bakal pakai?" (hypothetical)
+   - "Setuju gak kalau fitur Z penting?" (leading)
+
+   VERSI B: Lost Lead (yang gak jadi sign up atau cancel)
+   Tujuan: identify deal-breaker, kompetitor advantage
+   
+   Questions:
+   - "Pas lo evaluate platform messaging, problem apa yang lo coba
+     solve?"
+   - "Kompetitor mana aja yang lo evaluate? Apa yang menarik dari
+     masing-masing?"
+   - "Akhirnya lo pilih [winner]? Reason utama?"
+   - "Apa yang hallowa missing dibanding [winner]?"
+   - "Kalau hallowa fix [missing thing] dalam 3 bulan, lo bakal
+     pertimbang ulang?" (commitment test)
+
+   VERSI C: Prospect (calon customer yang belum buy)
+   Tujuan: identify Job-To-Be-Done, willingness to pay
+   
+   Questions:
+   - "Saat ini, gimana lo handle customer chat dari multi channel?"
+   - "Tools apa aja yang lo pakai? Berapa total bayarannya per bulan?"
+   - "Berapa orang di tim CS lo? Mereka kerja dari mana (kantor/WFH)?"
+   - "Kalau ada platform ideal yang solve [pain identified], berapa
+     lo bersedia bayar?"
+   - "Apa criteria utama lo pas pilih tool baru?"
+   - "Siapa yang harus approve pembelian? CFO? CEO?"
+
+2. RECRUITING STRATEGY
+
+   Target: 10-15 interviewee per versi (minimum 30 total)
+   
+   Existing customer recruitment:
+   - Filter dari CRM: customer aktif >3 bulan, di tier Starter atau Pro
+   - Email outreach (template provided): 30-min Zoom, insentif
+     Rp 100-200rb voucher GoPay/Tokopedia
+   - Target response rate: 10-15%
+   - Schedule via Calendly atau Cal.com
+   
+   Lost lead recruitment:
+   - Filter: signed up free trial tapi gak convert dalam 30 hari
+   - Email outreach: "Quick 20-min call, kasih masukan, dapet voucher"
+   - Atau pakai LinkedIn outreach untuk decision maker
+   
+   Prospect recruitment:
+   - Komunitas TDA (Tangan Di Atas), Indonesia Marketers Association,
+     komunitas UMKM lokal
+   - Post di LinkedIn / Instagram dengan call for participants
+   - Atau pakai panel service (Lyssna, Maze, dll) untuk speed
+
+3. INTERVIEW LOGISTICS
+
+   Tools:
+   - Recording: tldv, Otter.ai, Fathom, Grain (semua punya AI summary)
+   - Scheduling: Calendly / Cal.com
+   - Note-taking: dovetail.com / Notion / Airtable
+   - Survey backup: Tally / Typeform
+   
+   Setup:
+   - 30-45 menit per interview
+   - Always recorded (dengan consent explicit)
+   - Always transcribed (auto-transcript via tools)
+   - Always tagged dengan theme (pain, feature, tool, etc)
+   
+   Insentif:
+   - Rp 100-200rb voucher (GoPay, Tokopedia, Sejasa)
+   - Delivered post-interview, gak dijanjiin di awal (avoid bias)
+   - Untuk prospect: bisa juga kasih "free 1 month Pro tier"
+
+4. ANALYSIS METHODOLOGY
+
+   Step 1: Tag theme per quote
+   - Pain themes: "duplicate work", "missing channel", "slow response"
+   - Feature themes: "flow builder", "mobile app", "marketplace"
+   - Workaround themes: "use tool X for", "manual copy-paste"
+   - Job themes: "speed up CS", "reduce missed chat", "scale team"
+   
+   Step 2: Frequency analysis
+   - Top 10 mention themes (bertekad ada minimum 5 menyebut)
+   - Distribute by persona (existing vs lost vs prospect)
+   - Distribute by industry (e-commerce vs services vs healthcare)
+   
+   Step 3: Severity scoring
+   Per theme:
+   - Frequency (berapa interviewee mention)
+   - Intensity (mereka frustrated banget atau cuma annoyed?)
+   - Workaround difficulty (gampang vs sulit)
+   - Willingness to pay (mau bayar lebih untuk solve ini?)
+   - Score = frequency × intensity (1-5) × WTP (1-5)
+   
+   Step 4: Validate feature priority
+   Bandingin dengan internal feature gap analysis:
+   - Gap yang muncul di customer interview = REAL NEED, prioritize
+   - Gap yang TIDAK muncul = mungkin asumsi internal, deprioritize
+   - Yang muncul tapi belum di feature gap = NEW INSIGHT
+
+5. SAMPLE QUESTION BANK PER FEATURE GAP
+
+   Untuk validate "Visual Flow Builder":
+   ✅ "Last 30 hari, ada moment lo butuh customer service yang lebih
+     pintar dari simple keyword reply? Ceritain step by step."
+   ❌ "Lo butuh chatbot yang bisa branching gak?"
+   
+   Untuk validate "Marketplace integration":
+   ✅ "Customer chat lo dari Tokopedia/Shopee/Lazada gimana lo handle
+     sekarang?"
+   ❌ "Setuju gak Tokopedia integration penting?"
+   
+   Untuk validate "Mobile app":
+   ✅ "Pas lo lagi diluar kantor dan ada chat customer urgent, gimana
+     lo handle? Ceritain kasus terakhir."
+   ❌ "Lo pengen ada mobile app gak?"
+
+6. OUTPUT FORMAT
+
+   Per interview:
+   - Recording link
+   - Auto-transcript
+   - 1-page summary (Notion/Airtable)
+   - Tagged quotes (5-10 quotes per interview)
+   
+   Aggregated report:
+   - Top 10 pain points (frequency + severity)
+   - Top 10 feature requests (validated demand)
+   - Workaround landscape (apa tools lain yang dipakai)
+   - Persona insights (per industry, per company size)
+   - Pricing willingness data (untuk pricing strategy)
+   - Direct quotes untuk marketing (testimonial pool)
+
+7. RED FLAGS YANG HARUS DIHINDARI
+
+   Bias yang umum:
+   - Confirmation bias: cuma listen yang konfirmasi asumsi internal
+   - Sampling bias: cuma interview customer "sayang" (hindari rekrut
+     dari NPS promoter only)
+   - Sunk cost: justify build feature yang udah disetujuin executive
+   - "Loud minority": 1 customer yang ngotot ≠ market need
+   
+   Mom Test violations yang sering:
+   - Pitching idea ke interviewee
+   - Leading questions
+   - Hypothetical questions
+   - Talking >30% airtime (target: agent talk 20%, listen 80%)
+   - Tidak follow-up "ceritain lebih"
+
+8. POST-INTERVIEW ACTION
+
+   Per insight:
+   - High demand + low effort = SHIP NOW (Q1)
+   - High demand + high effort = ROADMAP (Q2-Q3)
+   - Low demand + low effort = MAYBE (backlog)
+   - Low demand + high effort = SKIP
+   
+   Per customer:
+   - High pain + WTP = candidate untuk beta program / case study
+   - Churn risk = escalate ke CSM untuk save
+   - Champion (love product) = candidate untuk testimonial/referral
+
+═══ TIMELINE ═══
+
+Week 1: Setup (script, recruitment, tools)
+Week 2-3: Interview execution (2-4 per hari, total 30+)
+Week 4: Analysis + report
+Week 5: Roadmap update meeting dengan stakeholder
+
+═══ BUDGET ═══
+
+- Tool subscription (recording, scheduling, transcription): Rp 1-2jt
+- Insentif (Rp 150rb × 30 interview): Rp 4.5jt
+- Time PM/researcher: 4-5 minggu equivalent
+- Total: Rp 6-10jt + 1 person 4-5 minggu
+
+═══ MODE KERJA ═══
+- PANDU dari script preparation sampai analysis
+- Output script dalam Bahasa Indonesia (pakai untuk interview)
+- Transcript & summary boleh English (untuk team + investor)
+- Pakai Mom Test framework strict — review setiap pertanyaan apakah
+  violates rules
+- Tunggu approval setiap deliverable
+
+═══ OUTPUT FINAL ═══
+
+1. interview-scripts/ (3 versi: existing, lost, prospect)
+2. recruitment-templates/ (email, LinkedIn DM, social post)
+3. interview-logistics-guide.md (tools, setup, consent form)
+4. analysis-framework.md (tagging system, scoring rubric)
+5. report-template.md (struktur final report)
+6. red-flags-checklist.md (anti-bias guidelines)

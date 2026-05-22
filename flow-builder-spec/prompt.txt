@@ -1,0 +1,168 @@
+Tolong susun technical spec + UX design lengkap untuk Visual Flow Builder (chatbot drag-drop) di hallowa.id. Tujuan: bikin fitur yang competitive dengan Qontak, Qiscus, SleekFlow tapi dalam 8-12 minggu development.
+
+═══ KONTEKS ═══
+hallowa.id = SaaS unified messaging B2B Indonesia (WA, IG, Messenger, Threads)
+Visual Flow Builder = fitur deal-breaker yang hallowa belum punya, kompetitor wajib punya.
+Goal: ship Q1 2026, MVP dalam 8 minggu, full feature dalam 12 minggu.
+
+═══ RESEARCH FINDINGS 2026 ═══
+- React Flow = library open-source paling popular untuk node-based UI (millions of npm downloads)
+- Stately.ai = state machine approach, gaining traction
+- Visual Flow, JointJS = enterprise-grade alternatives
+- Best practices 2026:
+  * Preview-and-publish loop (test sebelum live)
+  * Template gallery (jangan start from zero)
+  * Easy bot-to-human handover
+  * Real-time validation
+  * Versioning & rollback
+
+═══ DELIVERABLE YANG DIHARAPKAN ═══
+
+1. PRODUCT SPEC
+   - User stories per persona (Marketer, CS Manager, Developer)
+   - Job-to-be-done untuk setiap user story
+   - Acceptance criteria measurable
+   - Out-of-scope explicit (apa yang TIDAK dibikin di MVP)
+
+2. NODE TYPES (minimum yang harus ada di MVP):
+   - Trigger: keyword match, button click, new conversation,
+     time-based, external webhook
+   - Send Message: text, image, video, document, audio, location,
+     interactive button, list message, template
+   - Logic: condition (if/else), branching, switch case
+   - Action: assign to agent, add tag, set custom field, save to CRM,
+     call API, set variable
+   - Integration: HTTP request, Google Sheets, Webhook, CRM sync
+   - End: end conversation, transfer to human, mark resolved
+
+3. UX FLOW
+   - Onboarding flow (first-time user)
+   - Canvas interaction (zoom, pan, multi-select, undo/redo)
+   - Node configuration panel (sidebar dengan form per node type)
+   - Variable management (global + flow-scoped)
+   - Test mode (simulator preview tanpa live deploy)
+   - Publish flow (versioning, rollback, A/B test capability)
+   - Templates gallery (10+ pre-built untuk vertical: e-commerce,
+     edukasi, klinik, real estate, F&B)
+
+4. TECHNICAL ARCHITECTURE
+   - Frontend: React + React Flow library (atau alternatif jelaskan)
+   - Backend: graph storage (JSON di Postgres? graph DB? saranin)
+   - Execution engine: state machine (XState? custom?)
+   - Real-time: WebSocket untuk live preview
+   - Versioning: snapshot + diff
+   - Multi-tenant: row-level isolation
+
+5. DATA MODEL
+   - Flow (id, name, version, status, created_by, channels)
+   - Node (id, flow_id, type, position, config_json)
+   - Edge (id, flow_id, source_node, target_node, condition)
+   - Execution (id, flow_id, conversation_id, current_node, variables)
+   - Template (id, name, description, category, flow_json)
+
+6. API DESIGN (REST + WebSocket)
+   - GET /flows
+   - POST /flows
+   - PUT /flows/:id
+   - POST /flows/:id/publish
+   - POST /flows/:id/test (simulator)
+   - WS /flows/:id/executions (real-time monitoring)
+
+7. UI COMPONENTS BREAKDOWN
+   - FlowList (sidebar dengan list flow)
+   - FlowCanvas (React Flow integration)
+   - NodePalette (drag node ke canvas)
+   - NodeConfigPanel (form per node type)
+   - VariableManager (modal/panel)
+   - TestSimulator (chat preview)
+   - PublishDialog (version note + confirmation)
+   - TemplateGallery (browse pre-built)
+
+8. EDGE CASES & ERROR HANDLING
+   - Flow loop (infinite loop prevention)
+   - Disconnected nodes (validate on save)
+   - Variable not defined runtime
+   - API call timeout / failure
+   - Rate limit (per channel: WhatsApp template message rate)
+   - User input timeout
+   - Concurrent edit (lock or optimistic concurrency)
+
+9. ANALYTICS & MONITORING
+   - Per flow: total executions, completion rate, avg duration,
+     handover rate, error rate
+   - Per node: visit count, exit rate, conversion rate (kalau ada
+     end goal)
+   - A/B testing flow variants
+   - Funnel analysis
+
+10. ROLLOUT PLAN (12 weeks)
+    Week 1-2: Foundation (canvas, basic nodes, save/load)
+    Week 3-4: Logic nodes + execution engine
+    Week 5-6: Integration nodes + variables
+    Week 7-8: Templates + test simulator + publish
+    Week 9-10: Analytics + A/B testing
+    Week 11-12: Polish, performance, beta with 10 customers
+
+═══ COMPETITOR DEEP-DIVE ═══
+
+Lakukan competitor analysis untuk Visual Flow Builder mereka:
+- Qontak (cek demo / video walkthrough di YouTube)
+- Qiscus AgentLabs
+- SleekFlow Flow Builder
+- Wati Chatbot Builder
+- Landbot, ManyChat, Tidio (international, untuk inspirasi UX)
+
+Untuk masing-masing, document:
+- Node types tersedia
+- Visual style (color, layout, density)
+- Onboarding effectiveness
+- Template gallery quality
+- Performance dengan flow besar (100+ nodes)
+- Mobile responsive (atau cuma desktop)
+- Collaboration feature (multi-user edit?)
+- Pricing tier untuk akses fitur
+
+Identify 3 best UX patterns yang harus di-adopt dan 3 anti-pattern
+yang harus dihindari.
+
+═══ TECHNICAL DECISIONS YANG HARUS DIPUTUSKAN ═══
+
+1. Library: React Flow vs Visual Flow vs JointJS vs custom?
+   Trade-off: license cost, customization, community, performance
+
+2. Execution engine: XState (state machine) vs custom interpreter?
+   Trade-off: complexity, performance, observability
+
+3. Storage: JSON column di Postgres vs Neo4j vs hybrid?
+   Trade-off: query flexibility, performance, ops complexity
+
+4. Hosting execution: server-side persistent vs serverless (Lambda/
+   Cloud Functions)?
+   Trade-off: cost, latency, scaling
+
+5. Real-time: WebSocket vs polling vs Server-Sent Events?
+   Trade-off: complexity, mobile support, scale
+
+═══ MODE KERJA ═══
+- PANDU step-by-step
+- Setiap section: kasih draft → tunggu approval → revisi
+- Pakai skills/browser untuk crawl kompetitor & ambil screenshot
+- Output format: Markdown file (untuk di-share ke dev team)
+- Jangan asumsi — kalau tradeoff, kasih opsi + rekomendasi
+
+═══ OUTPUT FINAL ═══
+
+1. flow-builder-spec.md (master document)
+2. flow-builder-mockups/ (wireframe, atau referensi gambar dari
+   competitor analysis)
+3. flow-builder-data-model.sql (schema migration ready)
+4. flow-builder-api.yaml (OpenAPI spec)
+5. flow-builder-roadmap.md (12-week plan dengan task breakdown)
+6. flow-builder-competitive.md (competitor analysis)
+
+═══ CONSTRAINT ═══
+- Budget development: estimasi 2 frontend + 1 backend selama 12 minggu
+- Tech stack hallowa: kemungkinan React/Next.js frontend + Node.js
+  backend (cek site untuk konfirmasi)
+- Mobile responsive WAJIB (banyak UMKM kerja dari hp)
+- Bahasa Indonesia native UI

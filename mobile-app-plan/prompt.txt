@@ -1,0 +1,230 @@
+Tolong susun mobile app development plan untuk hallowa.id (iOS + Android) untuk agent CS yang perlu handle conversation di mana saja. Goal: ship MVP dalam 12-16 minggu dengan tech stack yang sustainable.
+
+═══ KONTEKS ═══
+hallowa.id = SaaS unified messaging B2B Indonesia.
+Mobile app = critical gap. Agent CS UMKM Indonesia kerja dari mana
+saja, gak duduk depan PC seharian. Kompetitor (Qontak, Qiscus,
+SleekFlow) udah punya mobile app native.
+Use case utama: agent reply chat realtime saat di luar kantor,
+notifikasi push untuk pesan baru.
+
+═══ RISET 2026 (BACKGROUND) ═══
+
+Cross-platform framework comparison 2026:
+- Flutter market share: 46% (Google-backed)
+- React Native: 35-42% (Meta-backed, New Architecture)
+- Expo (React Native superset): semakin populer untuk SaaS
+- Native (Swift/Kotlin): performance terbaik tapi 2x cost
+
+Performance:
+- Flutter: compile native ARM, Impeller engine, 60-120fps konsisten
+- React Native: New Architecture closing gap, JSI bridge faster
+- Native: gold standard
+
+Ecosystem:
+- React Native: ekosistem JS/npm besar, hiring lebih mudah, web
+  reuse possible
+- Flutter: ekosistem dart smaller, hiring lebih sulit di Indonesia
+- Native: dual codebase, full control
+
+═══ DELIVERABLE YANG DIHARAPKAN ═══
+
+1. TECH STACK DECISION
+   Bandingkan 3 opsi:
+   
+   A. React Native (+ Expo):
+      - Pros: hiring pool besar di Indonesia, JS reuse dari web,
+        OTA updates via Expo
+      - Cons: Expo limitations untuk push notif kompleks, performance
+        slightly behind Flutter
+      - Recommended kalau: tim hallowa udah pake React, butuh
+        ship cepat
+   
+   B. Flutter:
+      - Pros: performance terbaik untuk cross-platform, single codebase
+        sangat clean, Material 3 + Cupertino built-in
+      - Cons: hiring Flutter dev di Indonesia masih limited, dart
+        learning curve
+      - Recommended kalau: prioritas performance & UI consistency
+   
+   C. Native (Swift + Kotlin):
+      - Pros: best performance, full platform features, no abstraction
+      - Cons: 2x cost, harus maintain dual codebase
+      - Recommended kalau: budget besar, fitur platform-specific
+        kompleks
+   
+   D. KMM (Kotlin Multiplatform Mobile) — emerging option
+   
+   E. Capacitor / Ionic (web-first wrapper) — quick MVP only
+   
+   Saranin yang paling fit dengan:
+   - Tim hallowa saat ini (frontend stack apa?)
+   - Budget development
+   - Timeline target
+   - Long-term maintainability
+   - Hiring market Indonesia
+
+2. MVP SCOPE (12-16 minggu target)
+   Must-have (Phase 1):
+   - [ ] Login (email/password, biometric optional)
+   - [ ] Unified inbox (list conversation, sort by recent)
+   - [ ] Conversation view (chat bubble, send text/image)
+   - [ ] Push notification untuk pesan baru
+   - [ ] Multi-channel indicator (WA/IG/Messenger/Threads icon)
+   - [ ] Quick replies (saved replies)
+   - [ ] Status: online/offline/break (untuk routing)
+   - [ ] Profile + logout
+   - [ ] Dark mode (UMKM Indonesia banyak pakai dark mode)
+   
+   Nice-to-have (Phase 2):
+   - [ ] Voice message (record + send)
+   - [ ] Video call (untuk premium tier)
+   - [ ] Customer profile detail (tags, notes, history)
+   - [ ] Internal note (notes yang gak dikirim ke customer)
+   - [ ] Conversation transfer (assign ke agent lain)
+   - [ ] Search conversation
+   - [ ] Filter (unread, mention, by tag)
+   - [ ] Offline mode (queue message saat offline)
+
+3. FEATURES YANG SENGAJA TIDAK DI MOBILE (out of scope)
+   - Visual Flow Builder (terlalu kompleks untuk mobile, pure desktop)
+   - Analytics dashboard kompleks (mobile cuma summary)
+   - Multi-tenant admin (pengaturan workspace, billing)
+   - Team management
+   Konsumen: ini fitur "manager / admin", bukan "agent".
+
+4. PUSH NOTIFICATION STRATEGY (KRUSIAL)
+   - Service: Firebase Cloud Messaging (FCM) untuk Android,
+     APNs untuk iOS, atau OneSignal sebagai abstraction
+   - Tipikal flow: backend hallowa → FCM → device
+   - Categorisation: per-conversation channel
+   - Priority: high untuk pesan customer, normal untuk system
+   - Action buttons: "Quick Reply", "Mark Read"
+   - Smart batching (jangan blast 10 notif untuk 10 pesan rapid)
+   - Quiet hours (off-duty agent gak diganggu)
+   - Lock screen reply (iOS + Android 7+)
+   - Bedakan: notification berdasar agent assignment vs broadcast
+     ke semua agent
+
+5. AUTHENTICATION & SECURITY
+   - JWT token + refresh token
+   - Biometric login (Face ID, Touch ID, Fingerprint)
+   - Auto-logout setelah idle (configurable per workspace)
+   - Certificate pinning untuk API calls
+   - Encrypted local storage (Keychain iOS, Keystore Android)
+   - Wipe local data saat logout
+   - Detect rooted/jailbroken device + warning
+   - 2FA support (TOTP, SMS)
+   - SSO support (Google, Microsoft) via OAuth
+
+6. OFFLINE-FIRST STRATEGY
+   - Local cache: SQLite via Drift (Flutter) atau WatermelonDB (RN)
+   - Outbox pattern: queue message → sync saat online
+   - Conflict resolution: server wins by default, dengan diff UI
+     kalau conflict
+   - Sync indicator (last synced timestamp visible)
+   - Background sync (limited, respect battery)
+
+7. PERFORMANCE TARGETS
+   - App size: <30MB (init download)
+   - Cold start: <2 detik
+   - List scroll: 60fps di mid-range Android (Snapdragon 6xx)
+   - Send message latency: <500ms p95
+   - Push notif → app open → message visible: <3 detik
+   - Battery: <5% drain per jam saat aktif chat
+
+8. UI/UX DESIGN PRINCIPLES
+   - Follow platform native (iOS HIG, Material 3 Android)
+   - Bahasa Indonesia primary, English secondary
+   - Accessibility: WCAG AA, screen reader support
+   - One-handed operation (tombol penting di reach jempol)
+   - Dark mode mandatory
+   - Tactile feedback (haptic) untuk action penting
+   - Loading skeleton, bukan spinner
+   - Empty states informatif
+
+9. TECHNICAL ARCHITECTURE
+   - State management: Riverpod (Flutter) / Redux Toolkit (RN)
+   - API client: Dio (Flutter) / Axios (RN)
+   - Real-time: WebSocket dengan reconnect handling
+   - Image: cached_network_image (Flutter) / FastImage (RN)
+   - Navigation: Go Router (Flutter) / React Navigation (RN)
+   - Analytics: Mixpanel/Amplitude/PostHog
+   - Crash reporting: Sentry / Firebase Crashlytics
+   - Feature flags: PostHog / GrowthBook
+
+10. RELEASE STRATEGY
+    - Beta: TestFlight (iOS) + Internal Testing track (Android)
+    - 50 customer beta testers untuk 4 minggu sebelum public launch
+    - Phased rollout: 10% → 50% → 100% di Play Store
+    - Crash threshold: <1% crash-free sessions, otherwise pause rollout
+    - Hotfix process: <24 jam untuk critical bug
+
+11. STORE LISTING & ASO
+    - App name: "HalloWa - Unified Messaging" atau "HalloWa Agent"
+    - Subtitle: "Kelola WA, IG, Messenger di 1 app"
+    - Screenshots: 8 image, focus pada inbox, conversation, multi-channel
+    - Video preview: 30-second showcase
+    - Category: Business
+    - Keywords: WhatsApp Business, customer service, omnichannel,
+      unified inbox, CRM messaging
+    - Localization: Indonesia + English minimum
+    - In-app review prompt: setelah 3+ days active use, max 1x/quarter
+
+12. CI/CD PIPELINE
+    - GitHub Actions / Fastlane / Codemagic
+    - Build per PR untuk testing
+    - Auto-deploy ke beta on merge to main
+    - Manual gate ke production
+    - Code signing automation
+
+═══ ROADMAP 16 MINGGU ═══
+
+Week 1-2: Tech stack decision, environment setup, design system
+Week 3-4: Auth flow + API integration foundation
+Week 5-6: Inbox list + conversation view (text only)
+Week 7-8: Push notification + real-time sync
+Week 9-10: Image/file send, quick replies, status
+Week 11-12: Polish, dark mode, accessibility
+Week 13-14: Beta release, gather feedback, iterate
+Week 15-16: Public release prep, ASO, marketing materials
+
+═══ TEAM REQUIREMENT ═══
+
+Minimum team untuk 12-16 minggu:
+- 2 mobile developers (Flutter atau RN, depending on choice)
+- 1 backend developer (untuk mobile-specific endpoints)
+- 1 designer (mobile-specialized, atau shared dengan web)
+- 1 PM/QA part-time
+
+Alternative: hire agency Indonesia (Eyro Digital, Niagahoster, dll)
+untuk burst capacity. Cost estimate: Rp 200-500jt all-in untuk MVP.
+
+═══ KOMPETITOR BENCHMARK ═══
+
+Test mobile app dari:
+- Qontak (download, evaluate UX, performance)
+- Qiscus
+- SleekFlow
+- Wati (limited Indonesia presence)
+- WhatsApp Business app sendiri (sebagai baseline UX)
+
+Document: 5 hal yang mereka lakukan dengan baik, 5 hal yang bisa
+dilakukan lebih baik oleh hallowa.
+
+═══ MODE KERJA ═══
+- PANDU step-by-step, mulai dari tech stack decision
+- Setiap section: opsi → trade-off → rekomendasi
+- Pakai skills/browser untuk research framework + competitor app
+- Kalau ada keraguan tech (misal RN vs Flutter), kasih recommendation
+  PLUS reasoning yang specific untuk hallowa
+
+═══ OUTPUT FINAL ═══
+
+1. mobile-app-tech-stack-decision.md
+2. mobile-app-mvp-scope.md
+3. mobile-app-architecture.md
+4. mobile-app-roadmap-16weeks.md
+5. mobile-app-design-principles.md
+6. mobile-app-budget-estimate.md
+7. mobile-app-go-to-market.md

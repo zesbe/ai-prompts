@@ -7,8 +7,12 @@ Kumpulan prompt siap pakai untuk berbagai task — copy, paste, eksekusi.
 | Kategori | Prompt | Deskripsi |
 |---|---|---|
 | Marketing | [`iklan-fb-ads`](./iklan-fb-ads/) | Setup Facebook Ads campaign untuk hallowa.id (B2B SaaS) |
-| SEO | [`seo-hallowa`](./seo-hallowa/) | Strategi SEO + GEO komprehensif (8 fase) untuk hallowa.id muncul di Google & AI search |
+| SEO | [`seo-hallowa`](./seo-hallowa/) | Strategi SEO + GEO komprehensif (8 fase) untuk hallowa.id |
 | Product | [`feature-gap-analysis`](./feature-gap-analysis/) | Feature gap analysis hallowa.id vs kompetitor + roadmap 12 bulan |
+| Product | [`flow-builder-spec`](./flow-builder-spec/) | Technical spec + UX design Visual Flow Builder (chatbot drag-drop) |
+| Product | [`marketplace-integration`](./marketplace-integration/) | Integration plan Tokopedia/Shopee/Lazada/TikTok Shop |
+| Product | [`mobile-app-plan`](./mobile-app-plan/) | Mobile app dev plan (iOS+Android) untuk agent CS |
+| Research | [`customer-interview`](./customer-interview/) | Customer interview script + Mom Test methodology |
 
 > _Akan terus bertambah seiring waktu._
 
