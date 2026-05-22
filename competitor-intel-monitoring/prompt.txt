@@ -1,0 +1,260 @@
+Tolong setup competitive intelligence monitoring system untuk hallowa.id agar tau setiap pergerakan kompetitor (Mekari Qontak, Qiscus, Wati, YCloud, SleekFlow) secara real-time tanpa effort manual.
+
+═══ KONTEKS ═══
+Pasar B2B SaaS messaging Indonesia bergerak cepat. Kompetitor bisa launch fitur baru, ubah pricing, atau push campaign besar tanpa hallowa tau. Tanpa monitoring, hallowa selalu reaktif.
+
+Goal: dapat alert otomatis dalam 24 jam saat kompetitor:
+- Launch fitur baru
+- Ubah pricing
+- Bikin campaign marketing besar
+- Hire executive baru (signal strategy shift)
+- Raise funding
+- Akuisisi / di-akuisisi
+- Muncul di AI search untuk query target hallowa
+
+═══ RISET 2026 (TOOLS LANDSCAPE) ═══
+
+Tools yang available:
+- **Visualping** ($10-50/month) — website change detection
+- **Klue** (enterprise, $$$) — battlecards + win/loss + AI summary
+- **Crayon** (enterprise) — full CI platform
+- **Similarweb** ($199-$3000/month) — traffic & ranking
+- **Semrush** ($129-499/month) — SEO + competitor keyword
+- **Ahrefs** ($129-449/month) — backlink + content
+- **SpyFu** ($39-299/month) — PPC research affordable
+- **PageCrawl.io** ($10-49/month) — change detection budget
+- **Google Alerts** (free) — basic mention monitoring
+- **Texta.ai** — AI search visibility tracking
+- **Brand24, Mention** — social listening
+- **Owler** — company profile tracking
+- **G2/Capterra** review monitoring (manual atau pakai integration)
+
+Insight 2026:
+- AI search visibility = new dimension monitoring (ChatGPT, Perplexity)
+- Battlecard delivery ke sales team penting
+- Win/loss analysis = struktural, bukan ad-hoc
+- Job posting = leading indicator strategy shift
+
+═══ KOMPETITOR YANG DI-MONITOR ═══
+
+Tier 1 (Indonesia, real-time):
+- qontak.com (Mekari Qontak)
+- qiscus.com
+- wati.io
+
+Tier 2 (regional, weekly):
+- ycloud.com
+- sleekflow.io
+- aisensy.com
+- chakrahq.com
+
+Tier 3 (global, monthly):
+- 360dialog.com
+- bird.com
+- trengo.com
+- verloop.io
+
+═══ DELIVERABLE YANG DIHARAPKAN ═══
+
+1. MONITORING DIMENSIONS
+
+   A. WEBSITE CHANGES (daily check)
+      - /pricing — alert kalau ada perubahan tier/harga
+      - /features — alert fitur baru
+      - /integrations — alert integrasi baru
+      - Homepage hero/CTA — alert positioning shift
+      - Blog new posts — track content velocity & topics
+      - /careers — job posting baru = signal team growth area
+      - /case-studies — customer success stories baru
+   
+   B. PRODUCT CHANGES (weekly check)
+      - Changelog/release notes
+      - In-app announcements (kalau ada akses trial)
+      - Help center / docs untuk fitur baru
+      - GitHub public repo activity (kalau ada SDK/API publik)
+   
+   C. MARKETING & PR (real-time)
+      - Press release / news mentions
+      - Social media (LinkedIn company page, Instagram, X)
+      - Paid ads tracking (Facebook Ad Library, LinkedIn Ad Library,
+        Google Ads via SpyFu)
+      - Webinar / event announcement
+      - Partnership / integration announcement
+   
+   D. SEO & RANKING (weekly)
+      - Top 50 target keyword ranking
+      - New blog post yang muncul di top 10
+      - Backlink baru (high-authority domain)
+      - AI search citation (ChatGPT, Perplexity, Gemini, Claude
+        manual probe)
+   
+   E. BUSINESS SIGNALS (monthly)
+      - Funding announcement (Crunchbase alert)
+      - Executive hire/leave (LinkedIn, news)
+      - Office expansion (LinkedIn job posting per location)
+      - Layoff / restructuring news
+      - Acquisition rumor / actual
+   
+   F. CUSTOMER VOICE (weekly)
+      - G2 review baru (positive + negative)
+      - Capterra review baru
+      - TrustPilot review (less common B2B)
+      - Reddit mention (r/SaaS, r/UMKMIndonesia, lokal komunitas)
+      - LinkedIn customer testimonial / complaint
+      - Twitter/X mention monitoring
+
+2. TOOLING STACK (BUDGET-AWARE)
+
+   Tier A — Bootstrap (Rp 0-500k/bulan):
+   - Google Alerts (free)
+   - Visualping free tier (5 page tracking)
+   - Manual G2/Capterra weekly check (free)
+   - LinkedIn manual follow + notification
+   - Crunchbase free (limited)
+   - Similarweb free (limited data)
+   
+   Tier B — Lean ($50-200/month, ~Rp 750k-3jt):
+   - Visualping paid ($10-50/mo)
+   - PageCrawl.io ($10-49/mo)
+   - SpyFu ($39/mo)
+   - Owler ($35/mo)
+   - Manual processes diorganize di Notion/Airtable
+   
+   Tier C — Mid ($300-800/month, ~Rp 4.5-12jt):
+   - Semrush ($129/mo)
+   - Visualping Premium
+   - Similarweb Starter ($199/mo)
+   - Brand24 ($79/mo)
+   - Tools beragam sesuai kebutuhan
+   
+   Tier D — Enterprise ($1500-3000+/month):
+   - Klue atau Crayon (battlecards + automation)
+   - Similarweb Pro
+   - Sales team-facing dashboard
+
+   Saranin tier yang paling fit dengan budget hallowa.
+
+3. AUTOMATION SETUP
+
+   - Visualping: setup 10-15 page kompetitor untuk track perubahan
+   - Slack/Discord webhook: alert dikirim otomatis ke channel
+     #competitive-intel
+   - Notion/Airtable: dashboard agregat semua signal
+   - Zapier/Make: glue automation antara tools
+   - Weekly digest email: ringkasan otomatis semua signal minggu itu
+   - Monthly report: deep analysis trends & implication
+
+4. RESPONSE PLAYBOOK
+
+   Untuk setiap jenis signal, kasih playbook:
+   
+   - **Kompetitor launch fitur baru:**
+     1. Lab assess: gimana pengaruhnya ke positioning hallowa?
+     2. Customer impact: ada churn risk?
+     3. Response: do-nothing / catch-up / counter-position?
+     4. Timeline: respond dalam 1-2 minggu
+   
+   - **Kompetitor turun harga / promo:**
+     1. Cek apakah promo terbatas atau permanen
+     2. Customer ada yang nanya/ngotot? Cek CRM
+     3. Response: match? value-add? wait-and-see?
+     4. Timeline: respond dalam 48 jam (revenue impact)
+   
+   - **Kompetitor raise funding besar:**
+     1. Implikasi: budget marketing & hiring akan naik
+     2. Strategi: defensive moat? pre-emptive PR?
+   
+   - **Kompetitor hire C-level baru (CMO, CRO):**
+     1. Background research: dari mana?
+     2. Implikasi strategy shift dalam 6 bulan
+   
+   - **Kompetitor mention buruk di review/social:**
+     1. Sales enablement: kirim ke tim sales sebagai battlecard
+     2. Reach out ke customer yang affected (kalau ada signal di
+        CRM)
+
+5. BATTLECARD DELIVERY
+
+   Per kompetitor utama (Qontak, Qiscus, Wati):
+   - One-pager battlecard untuk sales team
+   - Update setiap bulan atau kalau ada perubahan major
+   - Sections:
+     * Strengths kompetitor
+     * Weaknesses (untuk attack)
+     * Pricing comparison
+     * Feature parity matrix
+     * Customer typical complaints
+     * Common objection handling
+     * Sample win/loss reasons
+
+6. WIN/LOSS ANALYSIS PROCESS
+
+   - Track setiap deal yang lost dengan reason category:
+     * Lost ke kompetitor (specific kompetitor)
+     * Lost ke status quo (no decision)
+     * Lost ke budget
+     * Lost ke timing
+     * Lost ke fit
+   - Quarterly review: top 3 reason loss → roadmap input
+   - Quarterly review: top 3 reason win → marketing message reinforce
+
+7. AI SEARCH VISIBILITY MONITORING (NEW 2026)
+
+   Manual probe weekly (ChatGPT, Perplexity, Gemini, Claude):
+   Query yang harus di-test:
+   - "platform whatsapp business api terbaik di indonesia"
+   - "alternatif qontak"
+   - "alternatif qiscus"
+   - "platform unified messaging untuk umkm indonesia"
+   - "harga whatsapp business api indonesia"
+   - "berapa biaya platform messaging untuk bisnis kecil"
+   
+   Track per query:
+   - Apakah hallowa muncul?
+   - Posisi di citation order?
+   - Snippet text apa yang dikutip?
+   - Kompetitor mana yang muncul lebih dulu?
+   
+   Otomasi: pakai texta.ai atau custom script (karena AI search
+   API berkembang)
+
+8. INTERNAL DISTRIBUTION
+
+   - **Daily digest** ke product team (perubahan website kompetitor)
+   - **Weekly digest** ke marketing team (content, campaign, SEO)
+   - **Weekly digest** ke sales team (battlecards, objection updates)
+   - **Monthly executive summary** ke C-level (strategic implications)
+   - **Quarterly board update** (competitive landscape shift)
+
+═══ ROLLOUT TIMELINE ═══
+
+Week 1-2: Setup tools (Visualping, Google Alerts, Notion dashboard)
+Week 3-4: Test alerting flow, refine signal noise
+Week 5-6: Bikin first battlecard set (3 kompetitor utama)
+Week 7-8: Train internal team (sales, product, marketing) cara baca
+          dashboard
+Week 9-12: Iterate based on what's actionable
+
+═══ MODE KERJA ═══
+- PANDU setup step-by-step
+- Pakai skills/browser untuk test crawler kompetitor
+- Pakai skills code untuk build automation script kalau perlu
+- Output: live dashboard + automation rules
+
+═══ OUTPUT FINAL ═══
+
+1. tooling-stack-recommendation.md
+2. monitoring-dashboard-template (Notion/Airtable URL atau JSON)
+3. automation-setup-guide.md
+4. battlecards/ (folder per kompetitor)
+5. response-playbook.md
+6. ai-search-monitoring-spreadsheet.md
+7. weekly-digest-template.md
+
+═══ SUCCESS METRICS ═══
+
+- Time to detect kompetitor change: <24 jam
+- Time to respond strategically: <1 minggu
+- Battlecard usage rate by sales team: 80%+
+- Win rate vs key kompetitor: track quarterly improvement
+- AI search visibility: track ranking improvement bulanan

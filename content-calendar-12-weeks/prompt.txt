@@ -1,0 +1,247 @@
+Tolong susun content calendar 12 minggu (3 bulan) untuk hallowa.id yang align dengan strategi SEO + GEO, target buyer journey TOFU/MOFU/BOFU, dan integrate ke multi-channel (blog, LinkedIn, Instagram, email, webinar).
+
+═══ KONTEKS ═══
+hallowa.id = SaaS unified messaging B2B Indonesia.
+Output ini adalah deliverable Phase 5 dari [seo-hallowa](../seo-hallowa/).
+Tujuan: produksi konten konsisten untuk:
+1. Drive organic traffic dari Google (SEO)
+2. Capture AI citations (GEO - ChatGPT/Perplexity/Gemini)
+3. Build topical authority di B2B SaaS messaging Indonesia
+4. Generate trial signup dari content
+5. Nurture lead di buyer journey
+
+═══ RISET 2026 (FRAMEWORK) ═══
+
+Best practices content calendar 2026:
+- **4 horizons planning**: Annual themes → Quarterly pillars →
+  Monthly briefs → Weekly production
+- **Buyer journey alignment**: TOFU (awareness) / MOFU (consideration)
+  / BOFU (decision)
+- **Multi-channel orchestration**: 1 pillar content → 5-10 derivative
+  pieces (blog, LinkedIn, Instagram, email, webinar, infographic)
+- **AI Overview optimization**: structure untuk be cited
+- **GEO-friendly**: short answers di awal, FAQ schema, citable stats
+
+Distribusi mix recommended:
+- 40% TOFU (awareness, broad)
+- 35% MOFU (educational, deep-dive)
+- 25% BOFU (comparison, case study, ROI calculator)
+
+═══ KEYWORD STRATEGY (DIBANGUN DARI SEO PROMPT) ═══
+
+Pillar topics (3 bulan = 3 pillar):
+1. **WhatsApp Business API** (foundational, high volume)
+2. **Unified messaging / omnichannel customer service**
+3. **Customer service automation untuk UMKM**
+
+Cluster keywords per pillar (sample):
+
+Pillar 1 - WhatsApp Business API:
+- TOFU: apa itu whatsapp business api, beda whatsapp business
+  vs whatsapp business api
+- MOFU: cara setup whatsapp business api, harga whatsapp business api
+  indonesia, syarat whatsapp business api
+- BOFU: provider whatsapp business api terbaik indonesia, mekari
+  qontak vs hallowa, alternatif wati
+
+Pillar 2 - Unified Messaging:
+- TOFU: apa itu omnichannel customer service, manfaat unified inbox
+- MOFU: cara handle customer chat dari WA IG Messenger sekaligus,
+  tips response time customer service
+- BOFU: platform unified messaging indonesia, perbandingan 5 platform
+  messaging
+
+Pillar 3 - CS Automation:
+- TOFU: apa itu chatbot, jenis-jenis chatbot bisnis
+- MOFU: cara bikin chatbot whatsapp tanpa coding, contoh use case
+  chatbot UMKM
+- BOFU: chatbot WhatsApp terbaik indonesia, biaya chatbot WhatsApp
+
+═══ DELIVERABLE — 12 MINGGU CONTENT CALENDAR ═══
+
+WEEK 1 (Pillar 1 launch — WhatsApp Business API)
+- BLOG (Pillar): "Panduan Lengkap WhatsApp Business API untuk
+  Bisnis di Indonesia 2026" (3000-4000 kata)
+  Target keyword: "whatsapp business api indonesia"
+  CTA: trial signup
+- LINKEDIN: 3 post (Senin, Rabu, Jumat)
+  - Senin: thread 8 fakta WhatsApp Business API yang sering salah
+    dipahami
+  - Rabu: case study singkat — bisnis X yang ROI 3x setelah pakai
+    WA Business API
+  - Jumat: infografis "5 perbedaan WA Business vs WA Business API"
+- INSTAGRAM: 3 post + 5 stories
+  - Carousel post: "5 Mitos WhatsApp Business API"
+  - Reel: tutorial 60 detik
+  - Static: testimoni customer
+- EMAIL NEWSLETTER: send Sabtu pagi
+- WEBINAR: announce next week
+
+WEEK 2 (Pillar 1 cluster)
+- BLOG: "Cara Setup WhatsApp Business API dalam 5 Menit (No Coding)"
+  Target keyword: "cara setup whatsapp business api"
+  Word count: 1500-2000
+- BLOG: "Berapa Harga WhatsApp Business API di Indonesia 2026?"
+  Target keyword: "harga whatsapp business api"
+  Word count: 1200-1500
+- LINKEDIN: 3 post (best practices, comparison, use case)
+- INSTAGRAM: 3 post (fokus tutorial visual)
+- WEBINAR: "Demo HalloWa: Setup WhatsApp Business API dari Nol"
+  (Kamis 19:00 WIB)
+- EMAIL: webinar reminder + replay link
+
+WEEK 3 (Pillar 1 BOFU)
+- BLOG: "HalloWa vs Mekari Qontak: Mana Pilihan Terbaik untuk
+  Bisnis Anda?" (comparison page, 2500 kata)
+  Target keyword: "qontak vs hallowa"
+- BLOG: "5 Alternatif Mekari Qontak untuk B2B SaaS Indonesia"
+  Target keyword: "alternatif qontak"
+- LINKEDIN: 3 post
+- INSTAGRAM: 3 post
+- EMAIL: comparison digest
+
+WEEK 4 (Pillar 1 wrap + ROI)
+- BLOG: "Cara Hitung ROI WhatsApp Business API untuk Bisnis"
+  + ROI Calculator (interactive tool, BOFU)
+  Target keyword: "roi whatsapp business api"
+- BLOG: "Studi Kasus: Bisnis X Naik Konversi 250% dengan
+  WhatsApp Business API"
+- LINKEDIN: 3 post (focus case study)
+- INSTAGRAM: 3 post + 1 reel testimonial
+- EMAIL: ROI calculator launch
+
+WEEK 5-8 (Pillar 2 — Unified Messaging)
+Repeat structure:
+- Week 5: Pillar foundation post + cluster TOFU
+- Week 6: Cluster MOFU + tutorial + webinar
+- Week 7: BOFU comparison page (HalloWa vs Qiscus)
+- Week 8: Case study + multi-channel strategy guide
+
+WEEK 9-12 (Pillar 3 — CS Automation)
+- Week 9: "Apa itu Chatbot dan Mengapa UMKM Indonesia Butuh?"
+- Week 10: "Cara Bikin Chatbot WhatsApp Tanpa Coding"
++ Visual Flow Builder demo (sinergi dengan product launch)
+- Week 11: BOFU - "Chatbot WhatsApp Terbaik Indonesia 2026"
+- Week 12: Industry-specific - "Chatbot untuk E-commerce / Klinik /
+  Sekolah"
+
+═══ CONTENT TEMPLATE PER POST TYPE ═══
+
+A. PILLAR BLOG POST (3000-4000 kata)
+   Structure:
+   - TL;DR di awal (3-5 sentences) — KRUSIAL untuk GEO
+   - Table of contents
+   - Definition + context
+   - Step-by-step / how-to (with images)
+   - Use cases (3-5 examples)
+   - Common mistakes / FAQ
+   - Comparison vs alternatives
+   - ROI / results data
+   - CTA: trial signup atau demo
+   
+   GEO optimization:
+   - FAQ schema markup
+   - Citable statistics (with sources)
+   - Author bio dengan kredensial
+   - Internal links 5-8 ke cluster
+
+B. CLUSTER BLOG POST (1200-2000 kata)
+   - Direct answer di awal (TL;DR)
+   - Step-by-step atau analytical
+   - Internal link ke pillar
+   - CTA spesifik untuk topik
+
+C. COMPARISON / ALTERNATIVES PAGE (2500 kata)
+   - Comparison table (visual hierarchy)
+   - Per-criteria breakdown
+   - Pros/cons honest (jangan terlalu sales-y)
+   - Conclusion: hallowa best for X, kompetitor best for Y
+   - CTA trial gratis
+   - FAQ schema
+
+D. LINKEDIN POST (max 1300 char untuk algoritma optimal)
+   Hook + insight + CTA singkat
+   Format yang work:
+   - Numbered list (10x lipat reach vs paragraph)
+   - Before/after story
+   - Contrarian take
+   - Personal experience founder
+
+E. INSTAGRAM CAROUSEL (5-10 slide)
+   Slide 1: Hook (problem/question)
+   Slide 2-8: Insight per slide (1 idea per slide)
+   Slide 9: CTA (link in bio)
+   Slide 10: Logo/branding
+
+F. INSTAGRAM REEL (15-60s)
+   3-second hook + body + CTA
+   Captions WAJIB (banyak silent viewer)
+
+G. EMAIL NEWSLETTER (weekly digest)
+   - 1 main story
+   - 3 link curated (blog post, news, tool)
+   - 1 CTA (try feature, register webinar, dll)
+
+H. WEBINAR (1 per bulan)
+   45 menit content + 15 menit Q&A
+   Replay di-distribute via blog, email, LinkedIn
+
+═══ EDITORIAL CALENDAR FORMAT ═══
+
+Output sebagai Google Sheets / Airtable dengan kolom:
+
+Week | Date | Channel | Content Type | Title | Target Keyword |
+Funnel Stage | Word Count | Author | Status | URL Live |
+Internal Links | CTA | Notes
+
+═══ TEAM REQUIREMENT ═══
+
+Minimum team untuk eksekusi:
+- 1 Content Manager (50% time, oversee planning + editing)
+- 1-2 Content Writer (full-time atau outsource per-piece)
+- 1 SEO specialist (part-time, keyword research + optimization)
+- 1 Designer (part-time, infographic + carousel)
+- 1 Video editor (part-time, reels + webinar replay)
+
+Atau outsource: Rp 15-30jt/bulan untuk content agency Indonesia
+yang produksi 4 blog + social distribution.
+
+═══ DISTRIBUTION STRATEGY ═══
+
+Per piece pillar:
+1. Publish di blog hallowa.id
+2. Repurpose jadi LinkedIn post (3-5 angle)
+3. Repurpose jadi Instagram carousel
+4. Repurpose jadi Twitter/X thread (kalau aktif)
+5. Promote via email list
+6. Submit ke aggregator (Komunitas TDA, BeritaUMKM)
+7. Outreach untuk backlink (3-5 site relevan)
+8. Repackage jadi webinar (kalau topik cocok)
+
+Aggressive distribution = 70% pekerjaan content marketing.
+Production cuma 30%.
+
+═══ MEASUREMENT KPIs ═══
+
+Per piece:
+- Organic traffic (28 hari)
+- Time on page
+- Scroll depth
+- Conversion ke trial signup
+- Backlinks earned
+- AI citation muncul (cek manual)
+
+Aggregate (3 bulan):
+- Total organic traffic growth
+- Keyword ranking improvement (tracked di GSC)
+- Trial signup dari content
+- Email list growth
+- LinkedIn follower growth
+- Webinar attendance rate
+
+═══ MODE KERJA ═══
+- Output editorial calendar dalam format yang executable (Google Sheets)
+- Per minggu: kasih draft outline lengkap (bukan cuma judul)
+- Pakai skills seo-content-writer untuk draft konten kalau perlu
+- Pakai skills geo-content-optimizer untuk struktur AI-friendly
+- Tunggu approval per minggu sebelum produksi

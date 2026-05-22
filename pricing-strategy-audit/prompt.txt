@@ -1,0 +1,191 @@
+Tolong susun pricing strategy audit komprehensif untuk hallowa.id berdasarkan benchmark B2B SaaS 2026 dan competitor analysis. Goal: tier yang convert lebih baik, ARPU lebih tinggi, dan churn lebih rendah.
+
+═══ KONTEKS ═══
+hallowa.id = SaaS unified messaging B2B Indonesia.
+Pricing saat ini:
+- Free: Rp 0 (100 kontak, 1 nomor WA, 1 user, auto-reply dasar)
+- Starter: Rp 199k/bulan (1k kontak, 2 nomor WA, 3 user, broadcast,
+  IG&Messenger)
+- Pro: Rp 599k/bulan (10k kontak, 5 nomor WA, 10 user, Threads,
+  scheduled posts, full API)
+- Enterprise: Custom
+
+Issue yang teridentifikasi dari [feature gap analysis](../feature-gap-analysis/):
+- Jump dari Starter ke Pro = 3x harga (Rp 199k → Rp 599k), terlalu lebar
+- Free terlalu sempit (cuma 100 kontak)
+- Belum ada add-on / metered pricing untuk fitur baru (marketplace,
+  mobile app, AI agent builder)
+
+═══ RISET 2026 (BENCHMARK) ═══
+
+- **3-4 tier psikologis** dengan tier tengah sebagai "most popular"
+  → ARPU + conversion meningkat
+- **A/B test pricing page kuartalan** → 12-18% lift per test
+- **LTV:CAC ratio minimum 3:1** untuk sustainable
+- **Payback period 80-90 hari** untuk SaaS healthy
+- **Net Revenue Retention 95-120%** = benchmark VC-backed
+- **CAC B2B SaaS 2026: $160-300 per lead** (Indonesia tier-2: ~Rp 750k-1.5jt)
+- **5 model utama 2026:** value-based, freemium, usage-based, tier,
+  outcome-based
+- **AI features = real cost** → usage-based jadi populer untuk AI-heavy
+  fitur
+
+═══ DELIVERABLE YANG DIHARAPKAN ═══
+
+1. CURRENT STATE AUDIT
+   - Conversion rate per tier (kalau ada data analytics)
+   - ARPU per tier
+   - Churn rate per tier
+   - Upgrade rate Free→Starter, Starter→Pro
+   - Reverse: downgrade atau cancellation reason
+   - Kalau gak ada data: apa proxy yang bisa dipakai?
+
+2. COMPETITOR PRICING DEEP-DIVE
+   Audit pricing page dan tier:
+   - Mekari Qontak: tier breakdown, fitur per tier, harga
+   - Qiscus: pricing model (per-agent? per-conversation?)
+   - Wati: pricing tier, fitur
+   - SleekFlow: pricing approach
+   - YCloud, AiSensy, ChakraHQ: comparison
+   
+   Untuk masing-masing, ekstrak:
+   - Entry price
+   - Mid-tier price (yang setara dengan hallowa Pro)
+   - Enterprise floor
+   - Pricing model (flat? metered? hybrid?)
+   - Limit per tier (kontak, user, message volume, channel)
+   - Add-on / metered components
+   - Free trial vs freemium
+   - Annual vs monthly discount
+
+3. POSITIONING & VALUE PROP MATRIX
+   - hallowa positioned di mana di pricing landscape?
+   - Premium vs value vs budget?
+   - Apa "value moment" untuk masing-masing tier?
+   - Apa yang justify upgrade?
+   - Apakah pricing match dengan brand positioning?
+
+4. RECOMMENDED PRICING STRUCTURE
+
+   Option A — Tier Re-design (gradual):
+   - Free: tetap, tapi 200 kontak (vs 100)
+   - Starter: Rp 299k, 2k kontak, 3 user, +basic flow builder
+   - Growth (NEW): Rp 599k, 5k kontak, 5 user, +CRM essentials,
+     +1 marketplace, +mobile app
+   - Pro: Rp 1.299k, 15k kontak, 10 user, +all marketplace,
+     +flow builder advanced, +AI agent builder
+   - Enterprise: Custom
+
+   Option B — Hybrid Subscription + Metered:
+   - Base subscription per tier
+   - Plus per-conversation pricing (untuk volume tinggi)
+   - Plus per-AI-conversation (karena AI ada real cost)
+   - Plus add-on: per-marketplace integration
+
+   Option C — Per-Agent Pricing (kompetitor common):
+   - Rp 250-350k per agent per bulan
+   - Volume discount untuk 10+ agent
+   - Trade-off: lebih predictable revenue, tapi friction untuk scale
+
+   Saranin yang paling fit untuk hallowa berdasarkan:
+   - Customer profile (UMKM vs enterprise heavy?)
+   - Sales motion (PLG vs sales-led?)
+   - Cost structure (per-conversation cost?)
+   - Competitor benchmark
+
+5. ADD-ON & METERED PRICING
+
+   Add-on candidates:
+   - Marketplace integration: +Rp 99k/bulan per marketplace
+     (Tokopedia, Shopee, Lazada, TikTok Shop)
+   - Mobile app: include di Pro+ atau add-on Rp 49k/bulan untuk
+     Starter/Growth?
+   - AI Agent Builder: +Rp 199k/bulan
+   - Extra WhatsApp number: +Rp 49k/nomor/bulan
+   - Extra agent seat: +Rp 39k/seat/bulan
+   - White-label: +Rp 999k/bulan (Enterprise add-on)
+   - Premium support: +Rp 299k/bulan
+   - Custom integration: per-project quote
+   
+   Metered:
+   - Conversation overage: Rp 100/conversation di atas quota
+   - WhatsApp template message: pass-through pricing dari Meta
+     (Marketing/Utility/Authentication/Service)
+   - AI conversation: Rp 50-200 per AI-handled conversation
+     (depending on token usage)
+
+6. PSYCHOLOGICAL PRICING TACTICS
+
+   - **Decoy effect**: tier 3 (Pro) jadi terlihat better deal kalau
+     Growth ditaro di tengah dengan value yang clear
+   - **Anchoring**: tampilkan Enterprise duluan di pricing page
+     (kasih "Custom" tanpa angka), bikin Pro keliatan affordable
+   - **Charm pricing**: Rp 299k vs Rp 300k (test)
+   - **Annual discount**: 2 bulan gratis kalau bayar tahunan = 17% off
+   - **First-year promo**: 50% off bulan 1, normalize bulan 2+
+   - **"Most Popular" badge** di Growth tier
+   - **Comparison table** dengan checkmark visual yang konsisten
+   - **Money-back guarantee 30 hari** (kepercayaan)
+
+7. PRICING PAGE OPTIMIZATION
+
+   Elements yang harus ada:
+   - Comparison table dengan visual hierarchy
+   - FAQ section pricing-specific
+   - Calculator (estimasi cost berdasarkan volume)
+   - Live chat untuk Enterprise inquiry
+   - Social proof (logo customer, jumlah customer, testimoni)
+   - Schema markup (Product, Offer, AggregateRating) untuk SEO
+
+8. A/B TEST ROADMAP (kuartalan)
+
+   Q1: Test tier structure baru vs lama
+   Q2: Test charm pricing (Rp 299k vs Rp 300k)
+   Q3: Test "Most Popular" badge placement
+   Q4: Test annual discount messaging
+
+9. MIGRATION PLAN (kalau ubah pricing)
+
+   Critical: jangan kaget existing customer.
+   - Grandfather existing customer di harga lama untuk 12 bulan
+   - Beri opsi upgrade voluntary dengan diskon transition
+   - Komunikasi 30 hari sebelum effective date
+   - Highlight benefit baru yang mereka dapat
+   - Honor cancellation request tanpa friction (preserves trust)
+
+10. UNIT ECONOMICS VALIDATION
+
+    Per tier, hitung:
+    - Variable cost (Meta API cost, cloud cost, AI cost per conversation)
+    - Gross margin target: minimum 70% untuk SaaS healthy
+    - Contribution margin per customer
+    - LTV (assume average tenure: Starter 18 bulan, Pro 24 bulan,
+      Enterprise 36 bulan)
+    - CAC realistic per tier (Free→paid conversion rate × CAC blended)
+    - Payback period
+
+═══ MODE KERJA ═══
+- PANDU step-by-step
+- Mulai dari competitor pricing audit (paling cepat ada hasil)
+- Tunggu approval sebelum lanjut tier re-design
+- Pakai skills/browser untuk crawl pricing page kompetitor
+- Jangan ubah pricing tanpa stakeholder approval (revenue impact tinggi)
+
+═══ OUTPUT FINAL ═══
+
+1. competitor-pricing-matrix.md (deep-dive 7 kompetitor)
+2. pricing-tier-recommendation.md (3 opsi dengan trade-off)
+3. add-on-metered-design.md
+4. pricing-page-optimization.md
+5. ab-test-roadmap.md
+6. migration-plan.md (kalau ubah pricing)
+7. unit-economics.xlsx (atau Google Sheets)
+
+═══ SUCCESS METRICS ═══
+
+Target setelah implementasi (6 bulan):
+- ARPU naik 25-40% (dari mix shift ke tier lebih tinggi)
+- Conversion Free→Paid tetap atau naik (jangan turun)
+- Churn rate stabil atau turun
+- NRR naik ke 110%+
+- Pricing page conversion rate +12-18% (per A/B test)

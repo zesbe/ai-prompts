@@ -1,0 +1,295 @@
+Tolong design partner program (reseller + affiliate + integration partner) untuk hallowa.id. Goal: bangun channel distribution sustainable yang generate 30%+ revenue dari partner dalam 12 bulan.
+
+═══ KONTEKS ═══
+hallowa.id = SaaS unified messaging B2B Indonesia.
+Saat ini: pure direct sales / PLG. Untuk scale tanpa hire 2x sales team, butuh partner ecosystem.
+
+═══ RISET 2026 (BENCHMARK) ═══
+
+State of SaaS Affiliate 2026:
+- 56% partner program <50 affiliate
+- Hanya 10% scale beyond 1000 affiliate
+- 7.6% affiliates generate 1+ referral (bottom 92% silent)
+- Recurring commission paling efektif (vs one-time)
+- Average lifetime: 18 bulan untuk SaaS Affiliate
+
+Triple-Threat Ecosystem 2026:
+- **Resellers** (technical expertise, sell + implement)
+- **Affiliates** (high-velocity traffic, content/influencer)
+- **Referrals** (high-trust loyalty, customer-to-customer)
+
+Best practices:
+- Tracking transparan via dashboard
+- Onboarding flow yang clear
+- Community building
+- Competitive commission (15-30% recurring untuk SaaS)
+- Active enablement (training, materials)
+
+═══ DELIVERABLE YANG DIHARAPKAN ═══
+
+1. PARTNER TYPE STRATEGY
+
+   A. AFFILIATE PARTNERS (highest volume, lowest friction)
+      Profil:
+      - Content creator B2B (LinkedIn influencer, blogger, YouTuber)
+      - Konsultan freelance / agency kecil
+      - Komunitas (TDA, marketers, e-commerce groups)
+      
+      Commission: 20% recurring untuk 12 bulan, atau 30% one-time
+      Commitment: low (just promote)
+      Training: minimal (kasih asset + tracking link)
+
+   B. RESELLER PARTNERS (mid-volume, high value)
+      Profil:
+      - Digital agency yang handle UMKM client
+      - System Integrator (SI) yang implement business software
+      - Consultant CRM / Marketing
+      
+      Commission: 25% recurring + 10% margin reseller markup
+      Commitment: minimum 5 deal/quarter
+      Training: certification program (4-8 jam)
+      Benefits: dedicated CSM, white-label option (Enterprise),
+        co-marketing fund
+
+   C. INTEGRATION / TECH PARTNERS (strategic, ekosistem)
+      Profil:
+      - CRM/ERP players (Mekari sister product, JUBELIO,
+        Forstok, Sirclo)
+      - E-commerce platform (Shopify, WooCommerce, Tokopedia
+        Mitra app)
+      - Marketing tools (Mailchimp Indonesia, Mailerlite local)
+      - Payment gateway (Xendit, Midtrans, GoPay merchant)
+      
+      Commission: tergantung deal — biasanya rev share 10-20%
+        atau co-sell motion
+      Commitment: integration build + co-marketing
+      Training: technical workshops
+
+   D. REFERRAL PROGRAM (existing customer drive)
+      Profil: customer happy yang refer ke peer
+      Reward: 1 bulan gratis untuk referrer + 50% off bulan 1
+        untuk referee
+      Commitment: zero
+      Distribution: in-app banner, email campaign, NPS survey
+        follow-up
+
+2. COMMISSION STRUCTURE DETAIL
+
+   Affiliate:
+   - Rp 199k Starter: 20% × 12 bulan = Rp 478.4k total per signup
+   - Rp 599k Pro: 20% × 12 bulan = Rp 1.4jt total per signup
+   - Enterprise: custom (bisa $1000-5000 per deal)
+   - Cookie window: 90 hari
+   - Payout: monthly via bank transfer / ewallet
+   - Minimum payout: Rp 500k
+   - Anti-fraud: dedup IP, manual review for spike
+
+   Reseller:
+   - Rp 199k Starter: 25% × 12 bulan = Rp 597k + reseller markup
+   - Rp 599k Pro: 25% × 12 bulan = Rp 1.8jt + reseller markup
+   - Enterprise: tier-based (5-30% based on deal size)
+   - Annual MDF (market development fund): Rp 5-50jt depending tier
+   - Volume bonus: 10% extra setelah 20 deal/year
+
+   Integration Partner:
+   - Rev share negotiated case-by-case
+   - Co-marketing budget shared 50/50
+   - Joint pipeline tracked
+
+   Referral:
+   - 1 bulan gratis (max value Rp 599k)
+   - Cap: 5 referral per customer per quarter (anti-abuse)
+
+3. PARTNER PORTAL & TOOLING
+
+   Tools options:
+   - **Tapfiliate** ($89-299/mo) — affiliate tracking, payouts
+   - **Rewardful** ($49-129/mo) — Stripe-native, simple
+   - **PartnerStack** ($500+/mo) — full PRM for resellers
+   - **Allbound, Channeltivity** — enterprise PRM
+   - **Custom build** — kalau butuh integrasi mendalam dengan
+     hallowa core
+   
+   Saranin: start dengan Rewardful atau Tapfiliate untuk affiliate,
+   custom-light untuk reseller (Notion + Stripe + manual
+   payouts) sampai 50+ partner.
+
+   Portal harus punya:
+   - Dashboard: deal in progress, total earned, paid, pending
+   - Marketing assets: logo, banner, copy templates, case study
+   - Sales enablement: pitch deck, ROI calculator, comparison
+   - Training materials: video, certification quiz
+   - Support: ticketing system khusus partner
+   - Community: Slack/Discord channel untuk partner
+
+4. PARTNER ONBOARDING FLOW
+
+   Affiliate (low-touch, self-serve):
+   1. Apply via web form
+   2. Auto-approve kalau memenuhi criteria (LinkedIn 1k+, blog
+      domain authority 20+)
+   3. Welcome email + dashboard access
+   4. 5-min onboarding video
+   5. First-week kit: 5 ready-to-share posts, tracking link
+   6. Monthly newsletter dengan asset + tips
+
+   Reseller (high-touch, vetted):
+   1. Application form (company info, target customer, capacity)
+   2. Discovery call (30 min) untuk fit assessment
+   3. Approval → contract sign
+   4. Onboarding workshop (4 jam) — product demo, sales pitch,
+      objection handling
+   5. Certification quiz (must pass 80%)
+   6. First deal coaching (CSM joins call)
+   7. Quarterly business review
+
+   Integration Partner (strategic, custom):
+   1. Outbound atau inbound interest
+   2. Discovery → fit → MOU
+   3. Technical scoping
+   4. Joint roadmap
+   5. Integration build (joint engineering)
+   6. Co-launch GTM
+   7. Quarterly co-marketing review
+
+5. ENABLEMENT MATERIALS
+
+   For Affiliate:
+   - Tracking link generator
+   - Logo & brand kit
+   - 10 social media post templates (LinkedIn, Instagram, X)
+   - 5 email templates
+   - Case study one-pager
+   - "How to talk about HalloWa" 1-page primer
+
+   For Reseller:
+   - Pitch deck (template, customizable per industry)
+   - ROI calculator
+   - Comparison vs Qontak/Qiscus/Wati
+   - Demo video (15-min)
+   - Objection handling cheat sheet
+   - SOW template
+   - Pricing/discount matrix
+   - Implementation playbook
+
+6. RECRUITMENT STRATEGY
+
+   Affiliate (target: 100 dalam 6 bulan):
+   - Outreach ke LinkedIn influencer B2B (top 100 di
+     Indonesia messaging/CRM/marketing space)
+   - Partner directories (Refgrow, Tapfiliate marketplace)
+   - Content marketing: "Affiliate Program Hallowa" page
+   - Komunitas: TDA, Indonesia Marketers, e-commerce groups
+   - Customer referral: existing customer who's also creator
+
+   Reseller (target: 20 dalam 6 bulan):
+   - Outreach ke top 50 digital agency Indonesia
+   - SI partner program (Niagahoster, BizNet, Telkomsigma)
+   - LinkedIn Sales Navigator targeting
+   - Industry events (Marketeers, IDB Indonesia, ISMG)
+   - Existing customer who has agency ambitions
+
+   Integration (target: 5 strategic dalam 12 bulan):
+   - Direct outreach ke C-level platform target
+   - Strategic introduction via investor / advisor
+   - Industry event networking
+   - Build first integration as POC, use as case study
+
+7. PARTNER TIER STRUCTURE
+
+   Bronze → Silver → Gold → Platinum
+
+   Bronze (default):
+   - Standard commission
+   - Self-serve resources
+   - Email support
+
+   Silver (after 5 deal/year atau Rp 50jt commission):
+   - +5% commission
+   - Priority email support
+   - Quarterly strategy call
+
+   Gold (after 20 deal/year atau Rp 200jt):
+   - +10% commission total
+   - Dedicated CSM
+   - MDF Rp 10jt/year
+   - Co-marketing opportunities
+   - Featured in directory
+
+   Platinum (after 50 deal/year atau Rp 500jt):
+   - +15% commission total
+   - Dedicated AE + CSM
+   - MDF Rp 50jt/year
+   - Strategic account access
+   - Annual offsite invite
+   - Co-branded marketing campaigns
+
+8. CHANNEL CONFLICT MANAGEMENT
+
+   Rules:
+   - Direct sales registers deal di CRM dulu = direct gets credit
+   - Affiliate / reseller registers deal in partner portal = partner
+     gets credit
+   - 90-day cookie/protection window
+   - Conflict resolution: 50/50 split kalau bersamaan + escalate
+   - No "stealing" leads existing customer (anti-cannibalization)
+
+9. METRICS & GOVERNANCE
+
+   Track per quarter:
+   - Total partners (active vs dormant)
+   - Revenue from partner channel (% of total)
+   - Customer acquired via partner (CAC comparison vs direct)
+   - Partner satisfaction (NPS quarterly survey)
+   - Activation rate (% partner yang gen 1+ referral)
+   - Retention rate (partner churn)
+   - Commission paid out vs revenue generated
+   - LTV of partner-acquired customer vs direct
+
+   Governance:
+   - Monthly internal partner ops review
+   - Quarterly partner advisory board (top 10 partners)
+   - Annual partner conference
+
+10. ROLLOUT PLAN
+
+    Month 1: Setup tooling (Rewardful), legal (terms, agreements),
+             internal alignment
+    Month 2: Launch affiliate program (soft launch with 10 close
+             contacts as pilot)
+    Month 3: Open public affiliate, recruit 50 partners
+    Month 4: Launch reseller program with 5 vetted agency
+    Month 5-6: Scale recruitment, optimize onboarding based on
+              feedback
+    Month 7-9: Build first integration partner, co-launch
+    Month 10-12: Refine tier structure, launch referral program
+                 (in-app)
+
+═══ MODE KERJA ═══
+- PANDU step-by-step
+- Mulai dari affiliate (lowest risk, fastest learn)
+- Reseller butuh contracting yang serius — lawyer review wajib
+- Integration partner = ad-hoc, case-by-case
+- Tunggu approval setiap milestone
+- Pakai skills/browser untuk research kompetitor partner program
+
+═══ OUTPUT FINAL ═══
+
+1. partner-strategy-overview.md
+2. commission-structure.md (matrix)
+3. partner-onboarding-flow.md (per type)
+4. enablement-materials/ (template asset)
+5. recruitment-playbook.md
+6. tier-structure.md
+7. legal-templates/ (affiliate, reseller, integration partner agreement)
+8. tooling-recommendation.md
+9. governance-handbook.md
+10. 12-month-rollout-roadmap.md
+
+═══ SUCCESS METRICS (12 BULAN) ═══
+
+- 100+ active affiliate, 20+ reseller, 5+ integration partner
+- 30% revenue dari partner channel
+- Partner-driven CAC 50% lebih rendah dari direct
+- Partner NPS 50+
+- 25% partner di tier Silver+

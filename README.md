@@ -4,15 +4,33 @@ Kumpulan prompt siap pakai untuk berbagai task — copy, paste, eksekusi.
 
 ## 📚 Daftar Prompt
 
-| Kategori | Prompt | Deskripsi |
-|---|---|---|
-| Marketing | [`iklan-fb-ads`](./iklan-fb-ads/) | Setup Facebook Ads campaign untuk hallowa.id (B2B SaaS) |
-| SEO | [`seo-hallowa`](./seo-hallowa/) | Strategi SEO + GEO komprehensif (8 fase) untuk hallowa.id |
-| Product | [`feature-gap-analysis`](./feature-gap-analysis/) | Feature gap analysis hallowa.id vs kompetitor + roadmap 12 bulan |
-| Product | [`flow-builder-spec`](./flow-builder-spec/) | Technical spec + UX design Visual Flow Builder (chatbot drag-drop) |
-| Product | [`marketplace-integration`](./marketplace-integration/) | Integration plan Tokopedia/Shopee/Lazada/TikTok Shop |
-| Product | [`mobile-app-plan`](./mobile-app-plan/) | Mobile app dev plan (iOS+Android) untuk agent CS |
-| Research | [`customer-interview`](./customer-interview/) | Customer interview script + Mom Test methodology |
+### Marketing
+| Prompt | Deskripsi |
+|---|---|
+| [`iklan-fb-ads`](./iklan-fb-ads/) | Setup Facebook Ads campaign (CAPI, 6-phase, 2026 benchmark) |
+| [`seo-hallowa`](./seo-hallowa/) | Strategi SEO + GEO komprehensif (8 fase) |
+| [`content-calendar-12-weeks`](./content-calendar-12-weeks/) | Editorial calendar 12 minggu, multi-channel, buyer journey |
+
+### Product
+| Prompt | Deskripsi |
+|---|---|
+| [`feature-gap-analysis`](./feature-gap-analysis/) | Feature gap analysis vs kompetitor + roadmap 12 bulan |
+| [`flow-builder-spec`](./flow-builder-spec/) | Visual Flow Builder technical spec + UX design |
+| [`marketplace-integration`](./marketplace-integration/) | Tokopedia/Shopee/Lazada/TikTok Shop integration plan |
+| [`mobile-app-plan`](./mobile-app-plan/) | Mobile app dev plan (iOS+Android) untuk agent CS |
+| [`pricing-strategy-audit`](./pricing-strategy-audit/) | Pricing tier re-design + add-on/metered |
+
+### Growth & Business
+| Prompt | Deskripsi |
+|---|---|
+| [`partner-program-design`](./partner-program-design/) | Affiliate + reseller + integration partner program |
+| [`competitor-intel-monitoring`](./competitor-intel-monitoring/) | CI monitoring system, battlecards, AI search visibility |
+| [`funding-pitch-deck`](./funding-pitch-deck/) | Series A pitch deck Sequoia/YC framework |
+
+### Research
+| Prompt | Deskripsi |
+|---|---|
+| [`customer-interview`](./customer-interview/) | Mom Test interview script + JTBD methodology |
 
 > _Akan terus bertambah seiring waktu._
 

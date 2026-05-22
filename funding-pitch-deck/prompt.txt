@@ -1,0 +1,315 @@
+Tolong susun investor pitch deck komprehensif untuk hallowa.id (B2B SaaS unified messaging Indonesia) untuk raise Series A round, mengikuti Sequoia/YC framework dengan adaptasi konteks Indonesia.
+
+═══ KONTEKS ═══
+hallowa.id = SaaS unified messaging B2B Indonesia (WA, IG, Messenger, Threads).
+- 10K+ business customer
+- 50M+ pesan/bulan
+- 99.9% uptime
+- Official Meta Business Partner
+- Pricing: Free / Rp199k / Rp599k / Enterprise
+
+Stage assumed: Series A (post-product market fit, scaling).
+Target raise: $5-15M (~Rp 75-225M IDR).
+Investor target: regional VC + global VC fokus SEA.
+
+═══ RISET 2026 (FRAMEWORK) ═══
+
+Sequoia framework 12-15 slide:
+1. Company Purpose (1 sentence)
+2. Problem
+3. Solution
+4. Why Now (timing)
+5. Market Size (TAM/SAM/SOM)
+6. Competition / Alternatives
+7. Product (demo / screenshot)
+8. Business Model
+9. Traction / Metrics
+10. Team
+11. Financials / Projections
+12. The Ask
+
+YC simpler approach:
+- Lebih singkat (10-12 slide)
+- Heavy on traction numbers
+- Less polish, more substance
+- Direct & confident
+
+B2B SaaS metric standard 2026:
+- ARR & growth rate (target: 100%+ YoY untuk Series A)
+- NRR (Net Revenue Retention): 110%+ excellent, 95%+ baseline
+- Gross margin: 70%+ healthy
+- LTV:CAC: 3:1 minimum
+- Payback period: <12 bulan
+- Magic Number: >0.75
+
+Indonesia VC landscape:
+- Series A typical: $5-15M
+- Active local VC: East Ventures, AC Ventures, BRI Ventures,
+  Mandiri Capital, MDI Ventures, Alpha JWC
+- Regional: Sequoia SEA, Insignia, Wavemaker, Openspace
+- Global: Lightspeed, Tiger, Accel (selective)
+
+═══ DELIVERABLE — 14 SLIDE PITCH DECK ═══
+
+SLIDE 1: COVER
+- Logo hallowa
+- Tagline: "Unified Messaging Platform for Indonesia's 65 Million SMEs"
+- Round type: Series A
+- Date / Confidential
+
+SLIDE 2: COMPANY PURPOSE
+1 sentence: "We help Indonesian SMEs respond to customers
+faster, sell more, and scale their teams across WhatsApp,
+Instagram, and marketplaces."
+
+SLIDE 3: PROBLEM
+The customer service nightmare:
+- 65M+ Indonesian SMEs handle CS across 4-7 different apps
+- Average response time: 2 hours (industry benchmark <5 min for
+  optimal conversion)
+- 73% miss messages during peak hours
+- Tools fragmented: WhatsApp, Instagram DM, Tokopedia chat,
+  Shopee chat — 4 different tabs, 4 different teams, 4 different
+  process
+- Cost: lost revenue + frustrated customers + agent burnout
+
+Concrete pain story (real customer):
+"Diana di TokoBesar punya 5 CS agent, butuh 3 hari training,
+tetap missed chat 30% — pake hallowa response 2 jam → 5 menit"
+
+SLIDE 4: SOLUTION
+1 dashboard, 4+ channels, 1 unified customer profile.
+Visual: screenshot dashboard hallowa dengan:
+- WhatsApp tab (12 unread)
+- Instagram tab (5 unread)
+- Messenger tab (8 unread)
+- AI Auto-Reply Active
+
+Tagline: "Eliminate app-switching. Capture every conversation.
+Convert with AI."
+
+SLIDE 5: WHY NOW
+Convergence of 3 trends:
+1. **WhatsApp Business API growth**: 5B users globally, B2B
+   adoption +200% YoY
+2. **Indonesia SME digitalization**: Post-COVID acceleration,
+   government push (UMKM digital), Tokopedia+TikTok Shop boom
+3. **AI maturity**: GPT-4 era enables auto-reply that actually
+   works (vs keyword bots era)
+
+Plus:
+- iOS 14+ killed cross-app tracking → owned channel (WhatsApp)
+  matter more
+- Generative search shift → conversational commerce
+- Indonesia: world's 4th largest population, fastest-growing
+  SaaS adoption SEA
+
+SLIDE 6: MARKET SIZE
+- **TAM**: $50B global B2B SaaS messaging by 2030
+- **SAM**: $5B SEA messaging SaaS by 2028
+- **SOM**: $500M Indonesia SME messaging SaaS (5M SME × $100/year
+  ARPU realistic)
+
+Bottoms-up:
+- 65M SME Indonesia
+- 8% digital-ready (5.2M target)
+- 20% addressable in 5 years (1M)
+- Average ARPU Rp 500k/year = Rp 500B total = $33M ARR opportunity
+
+(Adjust numbers based on actual market research.)
+
+SLIDE 7: COMPETITION
+2x2 matrix: Price (low/high) vs Feature depth (basic/advanced)
+- Top-right (premium): Mekari Qontak, Qiscus
+- Bottom-right (premium budget): SleekFlow, Bird
+- Top-left (budget mass): Wati, AiSensy
+- Bottom-left (budget niche): no clear leader
+
+hallowa positioning: **mass-market premium** — kualitas
+enterprise dengan harga UMKM-friendly, Indonesia-native
+
+Differentiation pillars:
+1. Indonesia-first (server, payment, marketplace integration)
+2. Meta-deep (4 platform native, official partner)
+3. SME-focused pricing (50% lower than Qontak/Qiscus equivalent)
+
+SLIDE 8: PRODUCT
+- Screenshots: dashboard, mobile app (in dev), flow builder (planned)
+- Key features: Unified Inbox, AI Auto-Reply, Multi-Agent,
+  Scheduled Posts, Analytics, Marketplace Integration (Q2 2026),
+  Mobile App (Q2 2026)
+- Demo URL atau video embed
+
+SLIDE 9: BUSINESS MODEL
+- SaaS subscription, monthly + annual
+- 4 tiers: Free → Starter Rp199k → Pro Rp599k → Enterprise
+- Average ARPU: $XX (calculate)
+- Add-on potential: marketplace per Rp 99k, AI agent per Rp 199k
+- Sales motion: PLG (free → trial → paid) + sales-led
+  (enterprise direct)
+- Channel: 60% direct, 25% partner (planned), 15% inbound
+
+SLIDE 10: TRACTION
+The hockey stick:
+- ARR: Rp X jt → Rp X jt → Rp X jt (last 3 quarters)
+- Customer count: 10,000+
+- Message volume: 50M+/month
+- NRR: X%
+- Logo retention: X%
+- New logos last quarter: X
+- Notable customers: TokoBesar, MartKita, BankDigital, SehatApp,
+  EduPro
+- Growth rate: X% MoM
+
+(Replace X with actual numbers — kalau gak punya, ini section yang
+harus disusun dengan data internal hallowa).
+
+SLIDE 11: GO-TO-MARKET
+- PLG funnel: Free → Trial → Paid
+- Content marketing: 100k organic visitors/month (target)
+- Paid acquisition: FB Ads, Google Ads, LinkedIn
+- Partner channel: building (Q2 2026 launch)
+- Customer success: 95% activation rate target
+- Land & expand: avg account expand 1.5x in year 2
+
+SLIDE 12: TEAM
+- Founder/CEO: bio + relevant experience
+- CTO: bio + technical background
+- Other key hires: VP Sales, VP Product, VP Engineering
+- Advisor / board: ex-Mekari, ex-Tokopedia, ex-Meta Indonesia
+- Headcount: X total, X engineering
+- Plan to hire post-funding: Y people
+
+SLIDE 13: FINANCIALS / PROJECTIONS
+3-year projection (chart):
+- Year 1 (current): ARR Rp X, Burn Rp X
+- Year 2: ARR Rp 3X (3x growth target), Burn Rp 1.5X
+- Year 3: ARR Rp 7X, Cashflow positive
+
+Unit economics:
+- LTV: Rp X
+- CAC: Rp Y
+- LTV:CAC: 3.5x
+- Payback: 9 months
+- Gross margin: 75%
+
+SLIDE 14: THE ASK
+- Raising: $X Series A
+- Use of funds:
+  * 50% Engineering (mobile app, flow builder, marketplace)
+  * 25% Sales & Marketing (scale GTM)
+  * 15% Customer Success (retention)
+  * 10% Ops & Compliance (PDP UU, ISO 27001 prep)
+- Milestones with funding:
+  * Reach Rp X ARR by Q4 2027
+  * Launch in 2 SEA countries (Malaysia, Philippines?)
+  * Build moat with marketplace integration
+- Lead investor + supporting investor preference
+- Contact: founder email + Calendly link
+
+═══ APPENDIX SLIDES (untuk Q&A deep-dive) ═══
+
+A1. Cohort retention curve
+A2. Churn analysis & save plays
+A3. Pipeline coverage (sales)
+A4. Tech architecture (high-level)
+A5. Roadmap detail (12-24 bulan)
+A6. Comparable exits / multiples
+A7. Cap table & ownership
+A8. Detailed P&L
+A9. Customer testimonials
+A10. Competitive deep-dive
+
+═══ DESIGN GUIDELINES ═══
+
+- Visual style: clean, minimal, brand-consistent
+- Font: 1-2 max, sans-serif (Inter, Helvetica)
+- Color: HalloWa brand palette
+- Per slide: 1 message, 1 visual, max 6 bullets
+- Density: lebih banyak white space = lebih premium
+- Charts: simple, label clearly, source cited
+- Screenshots: high-res, no clutter
+- Avoid: stock photos generic, walls of text, jargon excessive
+
+Tools:
+- Pitch.com (collaborative, modern)
+- Figma + slide template
+- Google Slides (kalau prefer simple)
+- Canva pro (kalau gak ada designer)
+
+═══ NARRATIVE ARC ═══
+
+Story flow yang work untuk B2B SaaS:
+1. Hook (problem yang relatable)
+2. Tension (current solutions broken)
+3. Resolution (your solution)
+4. Validation (traction proves it)
+5. Vision (where this goes — bigger market)
+6. Ask (specific & confident)
+
+Avoid:
+- Starting with company history
+- "We're building the [X] for [Y]" cliché
+- Hype tanpa data
+- Defensive tone soal kompetitor
+
+═══ INVESTOR-SPECIFIC ADAPTATION ═══
+
+For East Ventures / AC Ventures (early-stage Indonesia):
+- Emphasize Indonesia market depth
+- Local team, local network
+- Path to local IPO atau strategic acquisition
+
+For Sequoia SEA / Insignia (regional):
+- Regional expansion potential
+- Comparable to regional winners (Bukalapak, Carousell trajectory)
+- Talent quality + execution speed
+
+For Tiger / Accel (global, growth):
+- Massive market, defensible moat
+- Best-in-class metrics
+- Path to $100M+ ARR
+
+═══ DUE DILIGENCE PREP ═══
+
+Saat investor minta, siapkan:
+1. Financial model (Excel/Google Sheets, monthly 36 months)
+2. Cap table (existing + dilution scenarios)
+3. Customer concentration (top 10 customer % of revenue)
+4. Cohort analysis spreadsheet
+5. Sales pipeline export
+6. Hiring plan + open roles
+7. Product roadmap detail
+8. Customer references (3-5 happy customer untuk reference call)
+9. Legal: incorporation docs, shareholders agreement, IP assignment
+10. Tech: architecture diagram, security policy, compliance status
+
+═══ MODE KERJA ═══
+- PANDU step-by-step
+- Mulai dari narrative + key metrics (substance)
+- Setelah substance solid, baru polish design
+- Pakai data hallowa actual — kalau belum ada, kasih placeholder
+  yang clear
+- Tunggu approval per section sebelum lanjut
+
+═══ OUTPUT FINAL ═══
+
+1. pitch-deck-narrative.md (script per slide)
+2. pitch-deck-data-needs.md (list data yang harus di-collect dari
+   internal team)
+3. pitch-deck-design-spec.md (visual guidelines)
+4. pitch-deck.pptx atau Google Slides URL atau Pitch.com
+5. one-pager.md (executive summary 1 page)
+6. financial-model.xlsx (3-year projection)
+7. dd-prep-checklist.md
+8. investor-target-list.md (top 30 VC dengan rationale per investor)
+
+═══ TIMELINE ═══
+
+- Week 1-2: Narrative + data collection
+- Week 3-4: First draft + feedback (3-5 advisor review)
+- Week 5: Polish design + practice pitch
+- Week 6-8: Investor outreach + first meetings
+- Week 9-16: Process meetings, term sheet negotiation
+- Week 17-20: Diligence, closing
+- Total: 4-5 bulan typical Series A process Indonesia/SEA
