@@ -1,4 +1,4 @@
-Tolong bantu setup Facebook Ads campaign untuk hallowa.id.
+Tolong susun & eksekusi setup Facebook Ads campaign untuk hallowa.id berdasarkan data benchmark 2026 dan best practices terbaru (CAPI, Advantage+, creative-first, iOS 14+ ready).
 
 ═══ KONTEKS BISNIS ═══
 hallowa.id adalah SaaS unified messaging platform B2B di Indonesia.
@@ -13,63 +13,265 @@ hallowa.id adalah SaaS unified messaging platform B2B di Indonesia.
   Enterprise custom
 - Free trial: 14 hari semua paket berbayar
 - Landing page utama: https://app.hallowa.id/register
+- Site utama: https://hallowa.id
+- Kompetitor utama: Mekari Qontak, Qiscus, Wati.io, YCloud
+
+═══ DATA RISET 2026 (REFERENSI BENCHMARK) ═══
+- B2B SaaS CPL global average: $50-150 (Rp 750k-2.25jt). Indonesia
+  tier-2 country, realistic CPL: Rp 300k-800k untuk B2B SaaS
+- SaaS CPL trend 2025-2026: naik 109% YoY (dari $37 ke $78)
+- CPM Indonesia tier-2 country: $2-5 (Rp 30k-75k per 1000 impressions)
+  vs US $23 — Indonesia 70-80% lebih murah
+- Target CTR B2B SaaS: 0.5-1.0% (elite: 1.5%+)
+- Target CPC B2B SaaS: $2-5 (Rp 30k-75k)
+- Target ROAS B2B SaaS: minimum 2.03 average, 4-6x untuk profit
+- Conversion rate B2B Facebook campaigns: 10.63% blended
+- Pixel-only setup miss 50%+ conversion post-iOS 14 — CAPI WAJIB
+- 90% B2B teams setup CAPI salah (EMQ score <5) — quality matters
+- Creative = 70% dari performance variance (Meta internal data)
+- Advantage+ Audience kasih -32% CPA vs detailed targeting
+  (kalau fit, terutama dengan budget >$50/day)
+- Lead response time <5 menit = 21x conversion vs 30 menit
+- Attribution window B2B: 90 hari (match sales cycle)
 
 ═══ TUJUAN CAMPAIGN ═══
 Primary objective: Lead Generation / Trial Signup
 Goal: orang daftar di app.hallowa.id/register dan mulai trial 14 hari.
-Saranin objective FB Ads yang paling tepat (Conversions vs Leads vs
-Traffic) berdasarkan status pixel & best practice B2B SaaS.
+
+Decision yang perlu lo bantuin:
+1. Conversions vs Leads (instant form) vs Traffic objective?
+   - Conversions: kalau pixel + CAPI ready, paling akurat
+   - Leads (instant form): bypass landing page, lebih cepat lead
+     tapi quality lebih rendah
+   - Traffic: cuma kalau pixel belum ready, sebagai temporary
+2. Optimization event:
+   - "Complete Registration" kalau pixel udah fire event itu
+   - "Lead" kalau pakai instant form
+   - "Add to Cart" / "InitiateCheckout" sebagai fallback kalau
+     volume registration belum cukup
+3. Attribution: 7-day click + 1-day view (default) vs 90-day click
+   (B2B). Saranin yang pas dengan sales cycle hallowa.
 
 ═══ BUDGET ═══
 - Budget harian: Rp 100.000/hari
 - Durasi: 30 hari
 - Total budget cap: Rp 3.000.000
-- Strategi alokasi: saranin lo — apakah split testing dulu 7-10 hari lalu
-  scale yang menang, atau langsung evergreen dari awal. Tunggu approval
-  gue sebelum eksekusi.
 
-═══ TARGET AUDIENCE ═══
-Tolong saranin targeting yang masuk akal untuk B2B SaaS messaging di
-Indonesia. Pertimbangkan:
-- Lokasi (Indonesia all atau tier-1 cities dulu: Jakarta, Surabaya,
-  Bandung, Medan?)
-- Job title / interest (founder UMKM, owner online shop, CS manager,
-  marketing manager, e-commerce, dll)
-- Behavior (engaged shoppers, small business owners, sudah pakai
-  WhatsApp Business)
-- Lookalike audience kalau pixel data udah cukup
-- Saranin minimal 2-3 ad set dengan audience berbeda untuk testing
+Catatan realistic dengan benchmark 2026:
+- Dengan CPL Indonesia ~Rp 500k-800k untuk B2B SaaS, budget Rp 3jt
+  ekspekstasi 4-10 lead, 1-3 trial signup, 0-1 paying customer
+- Bulan 1 = "data collection phase" — fokus dapet data CAPI yang
+  bersih, bukan immediate ROAS
+- Realistic profitability: bulan 4-6 (4-6 weeks untuk ROI signals
+  jelas)
 
-═══ CREATIVE ═══
+═══ STRATEGI STRUKTUR (HYBRID, BUKAN PURE MANUAL) ═══
+
+Saranin struktur ideal untuk budget Rp100k/hari:
+
+OPSI A — Hybrid Modern (REKOMENDASI):
+- 1 Campaign (Sales/Conversions objective)
+- 2 Ad Sets:
+  * Ad Set 1: Advantage+ Audience (broad, AI-driven targeting)
+    Budget: Rp 60k/hari
+  * Ad Set 2: Detailed Targeting (cold prospecting yang spesifik)
+    Budget: Rp 40k/hari
+- 3 Ads per Ad Set (creative testing)
+- Total: 6 ad variations untuk learning
+
+OPSI B — Pure Manual (kalau Pixel/CAPI belum mature):
+- 1 Campaign
+- 3 Ad Sets dengan audience berbeda manual
+- 2 Ads per Ad Set
+- Total: 6 variations
+
+OPSI C — Funnel-Based (kalau ada existing pixel data):
+- Campaign 1 (Cold): Rp 50k/hari, prospecting baru
+- Campaign 2 (Warm): Rp 30k/hari, retargeting visitor
+- Campaign 3 (Hot): Rp 20k/hari, retargeting trial yang belum upgrade
+- Total: 3 campaign, full funnel
+
+Kasih rekomendasi mana yang paling pas berdasarkan status pixel/CAPI
+dan data historis hallowa.
+
+═══ TARGETING (UNTUK DETAILED TARGETING AD SET) ═══
+
+Saranin minimal 2-3 ad set dengan audience berbeda:
+
+A. By Job Title / Interest (founder, CS manager):
+   - Lokasi: Indonesia (atau tier-1 dulu: Jakarta, Surabaya, Bandung,
+     Medan, Yogyakarta — saran lo)
+   - Job titles: "Founder", "CEO", "Owner", "Marketing Manager",
+     "Customer Service Manager", "Operations Manager"
+   - Industries: E-commerce, Retail, Consumer Services
+   - Age: 25-50
+
+B. By Behavior (existing tool users):
+   - Interests: "WhatsApp Business", "Customer Relationship Management",
+     "E-commerce", "Online Shopping"
+   - Behaviors: "Small business owners", "Engaged shoppers",
+     "Frequent international travelers" (proxy enterprise)
+
+C. Lookalike (kalau ada data ≥1000 customer):
+   - Lookalike 1% dari list paying customer (highest quality)
+   - Lookalike 2-5% kalau scale lebih luas
+
+D. Retargeting:
+   - Website visitor 30/60/90 hari (exclude yang udah register)
+   - Pricing page visitor (highest intent)
+   - Blog visitor (TOFU, longer nurture)
+   - Trial signup yang belum upgrade
+
+═══ CREATIVE STRATEGY (KRITIS — 70% PERFORMANCE) ═══
+
 Belum ada creative siap pakai. Tolong:
-1. Saranin format paling efektif untuk B2B SaaS Indonesia (single image
-   / carousel / video / reels)
-2. Draftin minimal 3 variasi copy ad lengkap:
-   - Headline (max 40 karakter)
-   - Primary text (max 125 karakter ideal)
-   - Description
-   - CTA button (Sign Up / Learn More / Try for Free / dll)
-3. Saranin angle visual:
-   - Screenshot dashboard?
-   - Testimoni customer (Diana Putri, Andi Wijaya, Sarah Nurul ada di
-     site)?
-   - Pain point ("CS lo masih buka 4 app berbeda?")
-   - Hasil ("Response time turun dari 2 jam ke 5 menit")
-4. Setelah lo kasih draft, gue yang siapin asetnya. Lo pandu spec
-   ukuran, format, dll.
 
-═══ TECHNICAL ═══
-- FB Pixel: belum tau status, tolong cek di hallowa.id apakah udah
-  terpasang. Cek lewat browser (View Page Source) atau curl. Kalau
-  belum ada, kasih tau cara pasangnya.
-- Akun FB & Business Manager: udah login di Chrome
-- Payment method di Ads Manager: gue cek sendiri sebelum publish
+1. Format breakdown — saranin minimum 3 format berbeda untuk testing:
+   - Single image (statis, easy produce, baseline)
+   - Carousel (multi-fitur showcase, B2B SaaS works well)
+   - Short video 15-30s (highest engagement, but produksi lebih lama)
+   - User-generated content style (kalau ada testimoni real)
+
+2. Creative angles — minimal 3 angle berbeda:
+   - Pain point: "CS lo masih buka 4 app berbeda?"
+   - Solution: "Semua chat WhatsApp, IG, Messenger, Threads dalam 1 inbox"
+   - Result/Proof: "Diana di TokoBesar turunin response time dari 2 jam
+     ke 5 menit pakai HalloWa"
+   - Authority: "Official Meta Business Partner. Server Indonesia. SOC 2."
+   - FOMO: "10,000+ bisnis udah pakai HalloWa. Trial 14 hari gratis."
+
+3. Copy framework per ad — kasih draft lengkap:
+   PRIMARY TEXT (max 125 char ideal):
+   - Hook (pertanyaan/statement provokatif)
+   - Value prop (1-2 kalimat)
+   - CTA action
+
+   HEADLINE (max 40 char):
+   - Benefit-driven, bukan feature
+
+   DESCRIPTION (optional, max 30 char):
+   - Reinforce CTA
+
+   CTA BUTTON:
+   - "Sign Up" (default trial signup)
+   - "Try for Free" (emphasize free trial)
+   - "Learn More" (TOFU/awareness)
+   - "Get Quote" (enterprise tier)
+
+4. Visual angle saranan:
+   - Screenshot dashboard (product demo)
+   - Customer testimonial (Diana, Andi, Sarah dari site)
+   - Comparison visual (dengan icon kompetitor disensor)
+   - Statistic visual ("Response time 2 jam → 5 menit")
+   - Founder talking head (kalau founder hallowa willing)
+
+5. Aspect ratios yang harus disiapin:
+   - 1:1 (Feed) — required
+   - 4:5 (Feed mobile, takes more space) — required
+   - 9:16 (Stories, Reels) — recommended
+   - 16:9 (Right column desktop) — optional
+
+Setelah lo kasih draft, gue yang siapin asetnya. Lo pandu spec
+ukuran, format, dan pacing video kalau ada.
+
+═══ TECHNICAL SETUP (KRUSIAL — DON'T SKIP) ═══
+
+1. PIXEL CHECK:
+   - Cek apakah Meta Pixel udah terpasang di hallowa.id
+   - Cek lewat browser Network tab atau Facebook Pixel Helper
+   - Atau curl + grep "fbq(" di HTML source
+   - Kalau belum: kasih kode pixel + instruksi pasang ke dev
+
+2. CAPI (CONVERSIONS API) — WAJIB 2026:
+   - Pixel-only setup di 2026 = miss 50%+ conversion (iOS 14+ killed
+     browser tracking quality)
+   - Cek apakah CAPI udah terpasang (server-side events)
+   - Kalau belum: setup options:
+     a. CAPI Gateway (Meta Pixel-as-a-Service, paling gampang)
+     b. CAPI integration via partner: Stape, Segment, Wzrd, Northbeam
+     c. Custom server-side via Meta Marketing API
+   - Setup event deduplication (event_id matching browser + server)
+   - Target EMQ (Event Match Quality) score: minimum 6/10, ideal 8+
+     - Required: external_id, em (email hashed), ph (phone hashed)
+     - Highly recommended: fbc, fbp, client_ip, user_agent
+   - Test events di Events Manager → Test Events tab sebelum live
+
+3. EVENT TRACKING:
+   Events yang harus tracked di pixel + CAPI:
+   - PageView (all pages)
+   - ViewContent (pricing page)
+   - Lead (form submission, fallback)
+   - CompleteRegistration (signup di app.hallowa.id) — PRIMARY EVENT
+   - StartTrial (saat user mulai trial 14 hari)
+   - Subscribe (saat upgrade ke paid plan) — REVENUE EVENT
+   - Custom: TrialActivated (event quality untuk optimization)
+
+4. DOMAIN VERIFICATION:
+   - Verify hallowa.id di Business Manager
+   - Setup 8 prioritized events di Events Manager (Aggregated Event
+     Measurement post-iOS 14)
+
+5. AUDIENCE BUILDING:
+   - Custom Audience: Website visitors (30/60/90/180 days)
+   - Custom Audience: Pricing page visitors
+   - Custom Audience: Trial users (kalau ada email list)
+   - Custom Audience: Customer list (paid users)
+   - Lookalike: 1% dari paying customers
+   - Lookalike: 1% dari trial users
+
+═══ MONITORING & OPTIMIZATION CHECKLIST ═══
+
+Daily (24-48 jam pertama):
+- [ ] Spend pace (gak burn budget terlalu cepat?)
+- [ ] CTR per ad (target 0.5%+)
+- [ ] CPC per ad (target Rp 30k-75k)
+- [ ] Pixel + CAPI events firing (cek di Events Manager)
+- [ ] EMQ score per event (target 6+)
+- [ ] Frequency (jangan over 3 dalam 7 hari di awal)
+
+Weekly:
+- [ ] CPL per ad set (track yang under-performing)
+- [ ] Creative fatigue (CTR turun >30%? matikan/refresh)
+- [ ] Audience overlap (Audiences Insight Tool)
+- [ ] Comments & messages (respond dalam <5 menit untuk inquiry serius)
+- [ ] Quality ranking, engagement ranking, conversion rate ranking
+
+Bi-weekly:
+- [ ] Reallocate budget: matikan ad set CPL >2x average, double
+  yang CPL <0.5x average
+- [ ] Refresh creative untuk yang fatigue
+- [ ] Test new audience based on data
+
+Monthly:
+- [ ] Cohort analysis: customer dari FB Ads vs organic, LTV
+  comparison
+- [ ] Pipeline review: lead → trial → paid funnel di tiap touchpoint
+- [ ] ROAS calculation (target 2x dulu, scale ke 4x)
+
+═══ COMPLIANCE & POLICY ═══
+
+Cek hal-hal ini sebelum publish:
+
+1. Special Ad Category? Tidak applicable untuk B2B SaaS — skip.
+2. Restricted content? Cek policy untuk:
+   - Sensitive personal information (gak boleh imply)
+   - Financial services (kalau mention pricing langsung di ad, hati-hati)
+3. Landing page compliance:
+   - Ada privacy policy link? (https://hallowa.id/privacy-policy ✓)
+   - Ada terms of service? (✓)
+   - Cookie consent banner aktif? (CHECK)
+4. Pixel & CAPI privacy:
+   - User consent untuk tracking di EU (kalau target EU traffic)
+   - Hashed PII saat kirim ke CAPI (jangan plain text)
+5. Trademark & IP:
+   - Jangan klaim "Official Meta Partner" tanpa bukti (cek listing
+     resmi di Meta Business Partner directory)
 
 ═══ MODE KERJA ═══
 PANDU STEP-BY-STEP. Pakai skills/browser dengan profile Chrome gue
 (node ~/.claude/skills/browser/start.js --profile).
 
-Aturan:
+Aturan ketat:
 - Tiap halaman penting: screenshot + jelasin opsinya dengan jelas
 - Tunggu approval gue sebelum lanjut step berikutnya
 - JANGAN auto-publish — di tahap akhir, lo BERHENTI dan biar GUE yang
@@ -79,24 +281,130 @@ Aturan:
   asumsi
 - Kalau lo nemu ada yang janggal di Ads Manager (peringatan, error,
   policy issue), berhenti dan lapor
+- Kalau pixel/CAPI belum proper, JANGAN lanjut ke campaign setup —
+  fix infrastructure dulu, baru iklan
 
 ═══ WORKFLOW URUTAN ═══
-1. Cek status FB Pixel di hallowa.id (browser/curl ke source code)
-2. Buka Ads Manager via skills/browser (dengan profile)
-3. Screenshot tampilan awal Ads Manager + kasih tau Ad Account ID
-   yang aktif
-4. Saranin struktur campaign: berapa ad set, berapa ad per ad set,
-   audience masing-masing
-5. Tunggu approval gue → lalu buat Campaign
-6. Pandu setup ad set satu per satu (audience, placement, budget,
-   schedule, optimization)
-7. Pandu setup ad creative (upload image, isi copy, preview)
-8. Sebelum publish: full review semua setting, tunggu approval gue
-9. Gue yang klik "Publish"
-10. Setelah live: kasih checklist hal yang harus gue monitor di
-    24-48 jam pertama
+
+PHASE 1 — INFRASTRUCTURE (sebelum bikin campaign):
+1. Cek Meta Pixel di hallowa.id (browser Network tab + Pixel Helper)
+2. Cek CAPI: ada server-side events firing? Cek di Events Manager
+3. Verify domain hallowa.id di Business Manager
+4. Cek 8 prioritized events di Aggregated Event Measurement
+5. Audit existing audiences (Custom + Lookalike)
+6. Cek ad account standing (no policy issues)
+7. Cek payment method aktif & cukup untuk Rp 3jt + buffer
+8. Saranin fix kalau ada issue, BARU lanjut Phase 2
+
+PHASE 2 — CAMPAIGN STRUCTURE:
+9. Saranin struktur campaign final (Opsi A/B/C)
+10. Tunggu approval gue
+11. Buat Campaign di Ads Manager
+12. Buat Ad Sets satu per satu (audience, placement, budget,
+    schedule, optimization, attribution)
+13. Setup creative slots (placeholder dulu sambil siapin asset)
+
+PHASE 3 — CREATIVE PRODUCTION:
+14. Generate copy ad (3 variasi minimum) — gue review
+15. Spec asset visual yang harus disiapin
+16. Gue siapin asset (atau lo bantu generate via skills lain
+    kalau ada AI image generation)
+17. Upload asset ke Ad creative
+18. Preview semua placement (Feed, Stories, Reels, Right column)
+
+PHASE 4 — PRE-LAUNCH REVIEW:
+19. Test events di Events Manager (CAPI + Pixel deduplication)
+20. Full review semua setting di Campaign Overview
+21. Cek estimated daily results — masuk akal gak?
+22. Final checklist:
+    - [ ] Audience size cukup (gak terlalu sempit, gak terlalu luas)
+    - [ ] Budget sesuai
+    - [ ] Schedule sesuai
+    - [ ] Optimization event yang bener
+    - [ ] Attribution window 7-day click + 1-day view (atau 90-day
+          untuk B2B, depending recommendation)
+    - [ ] Tracking parameters (UTM) di destination URL
+    - [ ] Landing page tested (mobile + desktop)
+23. GUE yang klik "Publish"
+
+PHASE 5 — POST-LAUNCH (24-48 jam pertama):
+24. Monitor delivery (gak underdelivery? gak rejected?)
+25. Cek event firing real-time di Events Manager
+26. Cek EMQ score per event
+27. Identify ad with worst delivery → diagnose
+28. Setup automated rules:
+    - Pause ad kalau CPL >2x target dalam 3 hari
+    - Pause ad kalau frequency >5 dalam 7 hari
+    - Notify kalau spend >120% pacing
+29. Setup notification: comment baru di ad, ad rejected, budget alert
+
+PHASE 6 — ITERATION (Week 2 onwards):
+30. Weekly review: scale yang menang, kill yang kalah
+31. Refresh creative tiap 2-3 minggu (B2B fatigue lebih lambat dari B2C)
+32. Test new audience hypothesis
+33. Monthly: cohort analysis, LTV calculation, ROAS report
 
 ═══ OUTPUT YANG GUE HARAPKAN ═══
-- Setiap step: screenshot + penjelasan singkat
-- Setiap keputusan strategis: opsi-opsi + rekomendasi lo + alasannya
-- Akhir sesi: ringkasan apa yang udah di-setup + monitoring plan
+
+1. Phase 1 deliverable: Infrastructure audit report
+   - Status pixel ✓/✗
+   - Status CAPI ✓/✗ + EMQ scores
+   - Issues yang harus difix sebelum lanjut
+   - Estimasi waktu fix infrastructure
+
+2. Phase 2 deliverable: Campaign structure proposal
+   - Diagram visual (Campaign → Ad Set → Ad)
+   - Reasoning di balik setiap keputusan
+   - Estimated reach, frequency, conversion
+
+3. Phase 3 deliverable: Creative brief
+   - 3+ copy variations (lengkap dengan headline, primary text, CTA)
+   - 3+ visual angles dengan reference design
+   - Asset checklist + spesifikasi
+
+4. Phase 4 deliverable: Pre-launch checklist signed off
+
+5. Phase 5+ deliverable: Live dashboard / weekly report template
+   - KPI tracking (CTR, CPC, CPL, CPM, ROAS, EMQ)
+   - Decision log: apa yang diubah, kapan, dampaknya
+   - Action items untuk next week
+
+═══ TIMELINE EKSPEKTASI (REALISTIC, BERDASARKAN BENCHMARK 2026) ═══
+
+- Minggu 1: Infrastructure setup + campaign launch
+- Minggu 1-2: Data collection phase, jangan over-optimize, biarkan
+  algorithm learn
+- Minggu 3-4: First optimization round, kill losers, scale winners
+- Bulan 2: Stabilize CPL, identify winning creative, scale audience
+- Bulan 3: Full optimization, lookalike audience aktif, retargeting
+  funnel jalan
+- Bulan 4-6: Clear ROAS signals, profitability decision (continue/
+  scale/pause)
+
+JANGAN EXPECT:
+- ❌ Profit di minggu pertama (B2B sales cycle 30-90 hari)
+- ❌ CPL turun dramatis di minggu 1-2 (algorithm masih learning)
+- ❌ ROAS positive bulan 1 (data collection phase)
+
+EXPECT:
+- ✅ Bulan 1: data infrastruktur bersih, baseline CPL/CPC/CTR
+- ✅ Bulan 2-3: pattern muncul, optimization actionable
+- ✅ Bulan 4-6: ROI clarity, scale decision
+
+═══ KEAMANAN & CONTROL ═══
+
+Yang LO (AI) lakuin:
+- Cek pixel & CAPI status
+- Saranin struktur campaign
+- Draft copy & creative angle
+- Setup ad set, ad creative slot
+- Monitor real-time
+- Lapor isu
+
+Yang GUE pegang sendiri:
+- Klik final "Publish Campaign"
+- Verify payment method
+- Approve budget setiap perubahan
+- Decision strategis (pause/scale/kill)
+- Approve creative final sebelum upload
+- Respond ke lead dalam <5 menit (kritis untuk conversion)
