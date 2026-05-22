@@ -1,0 +1,252 @@
+Tolong lakukan feature gap analysis komprehensif untuk hallowa.id vs kompetitor B2B SaaS unified messaging di pasar Indonesia. Tujuan: identifikasi fitur yang missing, prioritas pengembangan, dan roadmap 12 bulan ke depan.
+
+═══ KONTEKS BISNIS ═══
+hallowa.id adalah SaaS unified messaging platform B2B di Indonesia.
+- Produk: integrasi WhatsApp Business API, Instagram, Messenger, Threads
+- Status: Official Meta Business Partner
+- Target: UMKM sampai enterprise di Indonesia
+- Pricing: Free / Starter Rp199k / Pro Rp599k / Enterprise
+
+═══ FITUR YANG SUDAH ADA DI HALLOWA.ID (BASELINE) ═══
+- Unified Inbox (WA, IG, Messenger, Threads)
+- Auto-Reply dengan AI (keyword matching + AI context)
+- Multi-Agent (assignment + role management)
+- Scheduled Posts (IG, FB, Threads)
+- Analytics & Insights (response time, engagement)
+- Enterprise Security (AES-256, 2FA, SOC 2, server Indonesia)
+- WhatsApp: QR login, broadcast, interactive buttons, templates
+- Instagram: DM inbox, story mentions, comment replies
+- Messenger: FB Page inbox, automated responses, rich media
+- Threads: Post scheduling, mention tracking
+- API access (Pro tier+)
+
+Pricing tiers:
+- Free: 100 kontak, 1 nomor WA, 1 user, auto-reply dasar
+- Starter (Rp199k): 1k kontak, 2 nomor WA, 3 user, auto-reply+AI,
+  IG&Messenger, broadcast, analytics
+- Pro (Rp599k): 10k kontak, 5 nomor WA, 10 user, semua + Threads,
+  scheduled posts, full API access
+- Enterprise: Unlimited, dedicated infra, custom integration, SLA 99.99%
+
+═══ KOMPETITOR YANG HARUS DIBENCHMARK ═══
+
+Tier 1 (Indonesia, paling agresif):
+- Mekari Qontak (qontak.com) — pemain terbesar B2B SaaS messaging
+- Qiscus (qiscus.com) — official BSP, banyak fitur enterprise
+- Wati.io — fokus WhatsApp Business API
+
+Tier 2 (regional/global):
+- YCloud, 360Dialog, Bird CRM, SleekFlow, Trengo, Verloop.io, Zoko,
+  AiSensy, ChakraHQ
+
+Untuk masing-masing kompetitor, audit:
+- Halaman /features atau /pricing untuk daftar fitur lengkap
+- Changelog / blog "new feature" terbaru
+- Industry-specific solutions yang ditawarkan
+- Pricing tier breakdown (apa yang masuk Free vs Premium)
+- Mobile app availability (iOS, Android)
+- Marketplace / app integration
+
+═══ FRAMEWORK GAP ANALYSIS ═══
+
+Klasifikasi setiap fitur ke 4 kategori:
+
+🔥 CRITICAL — Deal-breaker untuk B2B serious:
+- Visual Chatbot/Flow Builder (drag-drop)
+- Unified Customer Profile (merge contacts dari semua channel)
+- CRM essentials (tags, notes, custom fields, segments)
+- Bot-to-human handover dengan context
+- Auto-routing (by topic/team/skill)
+- Knowledge Base for agents
+- Quick replies library
+- Working hours / out-of-office automation
+
+⚠️ IMPORTANT — Kompetitif disadvantage:
+- CSAT/NPS post-conversation surveys
+- Mobile app (iOS, Android) untuk agent
+- Webhook/API documentation lengkap
+- Sentiment analysis AI
+- Voice notes transcription
+- Auto-translate
+- Chat history export (compliance)
+- Tags & labels untuk conversations
+- Audit logs lengkap
+
+💡 NICE-TO-HAVE — Differentiator:
+- App Marketplace / Extensibility
+- Industry-specific templates (vertical solutions)
+- WhatsApp Coexistence (personal + API)
+- No-code AI Agent Builder
+- White-label / reseller option
+- Email channel integration
+- Live chat widget (web)
+- SMS channel
+- Voice/calling capabilities
+- WhatsApp Catalog + Products
+
+🇮🇩 INDONESIA-SPECIFIC — Local market lock-in:
+- Tokopedia chat integration
+- Shopee chat integration
+- Lazada chat integration
+- TikTok Shop integration
+- Local payment: GoPay, OVO, DANA, ShopeePay, QRIS
+- Bahasa Indonesia NLP out-of-box
+- PDP UU compliance explicit (UU 27/2022)
+- Centang Hijau / Blue Tick verification service
+- Indonesian holiday calendar untuk auto-out-of-office
+- Multi-warehouse / multi-cabang support
+
+═══ DELIVERABLE YANG DIHARAPKAN ═══
+
+1. **Comprehensive Feature Matrix** (spreadsheet)
+   Kolom: Feature | hallowa.id | Qontak | Qiscus | Wati | SleekFlow |
+   ChakraHQ | Status hallowa (✓/✗/Partial) | Priority (Critical/
+   Important/Nice) | Complexity (S/M/L/XL) | Customer impact (1-10)
+
+2. **Customer Need Validation**
+   Untuk setiap gap, validate dengan:
+   - Mention frequency di review platform (G2, Capterra, Trustpilot)
+   - Reddit/forum discussions di r/SaaS, r/UMKMIndonesia, Komunitas
+     TDA, Qiscus community, Qontak community
+   - Sales objection patterns (kalau ada akses ke sales call notes)
+   - Customer survey hasil (kalau hallowa pernah survey customer)
+
+3. **Prioritized Roadmap (12 bulan)**
+   Q1 (Critical): close deal-breaker gaps
+   Q2 (Indonesia lock-in): marketplace integration, payment, mobile app
+   Q3 (Differentiator): app marketplace, AI agent builder, vertical
+   Q4 (Polish & Scale): white-label, enterprise features
+
+   Per quarter:
+   - List fitur (3-5 max per quarter, jangan terlalu ambisius)
+   - Estimasi development effort (man-months)
+   - Estimasi revenue impact / churn reduction
+   - Dependencies antar fitur
+   - GTM plan (announcement, blog post, customer comms)
+
+4. **Pricing Tier Re-design**
+   Berdasarkan fitur baru, evaluate apakah tier sekarang masih masuk
+   akal. Possible re-design:
+   - Apakah Starter terlalu sempit (cuma 1k kontak)?
+   - Apakah Pro terlalu mahal jump (Rp199k → Rp599k = 3x)?
+   - Apakah perlu add tier "Growth" (Rp350-450k) di tengah?
+   - Fitur mana yang harus jadi add-on (per-use pricing) vs include
+     di tier?
+
+5. **Competitive Positioning Statement**
+   Setelah analisis, kasih saran positioning hallowa yang clear:
+   - "vs Qontak: hallowa lebih [X], Qontak lebih [Y]"
+   - "vs Qiscus: hallowa lebih [X], Qiscus lebih [Y]"
+   - "vs Wati: hallowa lebih [X], Wati lebih [Y]"
+   - Sweet spot hallowa (siapa best customer profile?)
+
+6. **Risk Register**
+   - Fitur apa yang KALAU GAK di-ship dalam 6 bulan, hallowa bakal
+     kehilangan customer ke kompetitor?
+   - Fitur apa yang risk overengineering (overinvest tanpa demand)?
+   - Threat dari Big Tech (Meta langsung ke business, Google enter market)?
+   - Pricing pressure dari new entrant murah?
+
+═══ METODOLOGI RISET ═══
+
+PHASE 1 — DESK RESEARCH (1-2 hari):
+1. Crawl halaman /features, /pricing, /integrations dari semua
+   kompetitor list di atas
+2. Crawl changelog / blog untuk fitur terbaru 6 bulan
+3. Cek G2, Capterra reviews untuk masing-masing kompetitor:
+   - Top "loved" features (apa yang customer pakai paling sering)
+   - Top "hated" issues (apa yang customer komplain)
+4. Cek r/SaaS, r/UMKMIndonesia, Quora untuk pattern feature request
+
+PHASE 2 — DEEP-DIVE KOMPETITOR (2-3 hari):
+1. Sign up free trial di 3-5 kompetitor utama (atau pakai demo video
+   YouTube kalau gak bisa)
+2. Document UI/UX flow kunci:
+   - Onboarding flow
+   - Setup WhatsApp connection
+   - Build chatbot/flow
+   - Send broadcast
+   - Multi-agent workflow
+   - Reporting/analytics dashboard
+3. Identify feature yang UX-nya superior atau inferior dibanding
+   hallowa
+
+PHASE 3 — CUSTOMER VALIDATION (3-5 hari):
+1. Interview 5-10 existing hallowa customer:
+   - Fitur paling sering dipakai
+   - Fitur yang dipakai tapi UI-nya susah
+   - Fitur yang DIBUTUHIN tapi BELUM ADA (top of list)
+   - Pernah pertimbangkan switch ke kompetitor? Kenapa?
+2. Cek support tickets / user feedback:
+   - Top 20 feature request
+   - Top 10 churn reason
+3. Cek failed sales (kalau ada CRM):
+   - Alasan utama lead pilih kompetitor
+
+PHASE 4 — SYNTHESIS & ROADMAP (2 hari):
+1. Sintesa semua data jadi feature matrix
+2. Prioritize pakai RICE framework:
+   - Reach: berapa customer affected
+   - Impact: dampak per customer (1-10)
+   - Confidence: validity of estimates (low/medium/high)
+   - Effort: development effort (person-months)
+   - Score = (R × I × C) / E
+3. Roadmap draft → review dengan stakeholder
+4. Final roadmap + GTM plan
+
+═══ MODE KERJA ═══
+PANDU STEP-BY-STEP. Pakai semua skills relevant:
+- skills/browser untuk crawl kompetitor & sign-up trial
+- competitor-analysis skill untuk benchmarking
+- content-gap-analysis untuk feature parity check
+- data-quality-auditor untuk validate hasil riset
+- code (kalau perlu cek API publik kompetitor)
+
+Aturan:
+- Tiap phase: kasih deliverable konkret
+- Tunggu approval sebelum lanjut phase berikutnya
+- Dokumentasikan source untuk semua claim (link review, screenshot,
+  dll) — jangan bikin asumsi tanpa bukti
+- Kalau ada fitur kontroversial (effort gede tapi unclear demand),
+  flag dan saranin "validate dulu sebelum build"
+- Output dalam Bahasa Indonesia (untuk internal team) + English
+  versi untuk pitch external (investor, partner)
+
+═══ BUDGET RISET ═══
+
+Effort estimate:
+- Desk research: 1-2 hari (1 orang)
+- Deep-dive kompetitor: 2-3 hari (mungkin butuh paid trial Rp 1-3jt
+  total)
+- Customer interview: 3-5 hari (mungkin perlu insentif Rp 100-200rb
+  per interviewee)
+- Synthesis: 2 hari
+
+Total: 8-12 hari, budget tools/insentif Rp 3-5jt.
+
+═══ OUTPUT FINAL ═══
+
+1. Feature matrix spreadsheet (Google Sheets atau Airtable)
+2. Roadmap document (markdown atau Notion)
+3. Pricing re-design proposal
+4. Competitive positioning statement
+5. Risk register
+6. Customer interview synthesis report
+7. Top 10 fitur yang HARUS di-ship dalam 6 bulan (with reasoning)
+
+═══ TIMING REKOMENDASI ═══
+
+Lakukan analisis ini:
+- Setiap kuartal (untuk update roadmap)
+- Sebelum funding round (investor butuh ini)
+- Sebelum pricing change (pastikan pricing match value)
+- Setelah ada customer churn signifikan (root cause analysis)
+
+═══ DATA YANG GUE PUNYA ═══
+[ISI: kalau punya akses ke salah satu di bawah, sebutin]
+- Customer list / CRM access? [ya/tidak]
+- Support ticket history? [ya/tidak]
+- Sales call recordings/notes? [ya/tidak]
+- Existing user surveys? [ya/tidak]
+- Analytics platform (PostHog, Mixpanel, Amplitude)? [ya/tidak]
+- Budget untuk paid kompetitor trial? [berapa Rp]
