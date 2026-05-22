@@ -39,7 +39,13 @@ Prompt template untuk setup Facebook Ads campaign untuk **hallowa.id** (B2B SaaS
 
 ## File
 
-- [`PROMPT.md`](./PROMPT.md) — Prompt siap copy-paste
+- [`prompt.txt`](./prompt.txt) — **Plain text, paling gampang di-copy** (buka raw view → Ctrl+A → Ctrl+C)
+- [`PROMPT.md`](./PROMPT.md) — Versi markdown dengan code block (klik tombol copy di pojok kanan atas code block)
+
+## Quick Copy Links
+
+- **Raw plain text**: https://raw.githubusercontent.com/zesbe/hallowa-fbads-prompt/main/prompt.txt
+- **GitHub view**: https://github.com/zesbe/hallowa-fbads-prompt/blob/main/prompt.txt
 
 ## License
 
