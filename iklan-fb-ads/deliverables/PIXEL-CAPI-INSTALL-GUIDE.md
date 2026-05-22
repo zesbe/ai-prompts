@@ -1,9 +1,16 @@
 # Meta Pixel + CAPI Setup Guide — hallowa.id
 
 > **Untuk:** Dev team hallowa.id
-> **Status sekarang:** Pixel ID `1382447226543529` sudah ada di Events Manager, **TAPI script belum terpasang di hallowa.id**, **CAPI belum ke-setup**, **0 events flowing**.
+> **Status sekarang:** Pixel "HalloWa Pixel" baru dibuat di **Business Manager HalloWa** (1522280809047027). Pixel ID baru harus dicek di Events Manager. Pixel script belum terpasang di hallowa.id, CAPI belum setup, 0 events flowing.
 > **Estimasi waktu:** 2-4 jam dev (pixel) + 4-8 jam dev (CAPI proper) = **1-2 hari kerja total**.
 > **Generated:** 2026-05-22 (post-audit Phase 1 FB Ads campaign)
+
+## ⚠️ UPDATE 2026-05-22 (sesi 2):
+
+- **Pixel LAMA `1382447226543529`** ("HalloWa") = di **personal account Yudi Haryanto**, bukan di Business HalloWa. **JANGAN PAKAI ini.**
+- **Pixel BARU "HalloWa Pixel"** = baru dibuat di Business HalloWa (1522280809047027). ID-nya: **[CEK_DI_EVENTS_MANAGER]** — perlu diganti di kode script di bawah sebelum implement.
+- **Ad Account BARU "Hallowa"** = `1950462445655335` (di Business HalloWa, currency IDR, timezone Asia/Jakarta).
+- Semua referensi ke pixel ID `1382447226543529` di guide ini harus **diganti** ke pixel ID baru sebelum dev pasang.
 
 ---
 
@@ -36,12 +43,12 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1382447226543529');
+    fbq('init', 'PIXEL_ID_BARU_DARI_BUSINESS_MANAGER'); // ⚠️ Ganti ke pixel HalloWa Pixel ID yg baru
     fbq('track', 'PageView');
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1382447226543529&ev=PageView&noscript=1" />
+      src="https://www.facebook.com/tr?id=PIXEL_ID_BARU&ev=PageView&noscript=1" />
   </noscript>
   <!-- End Meta Pixel Code -->
 </svelte:head>
@@ -49,7 +56,7 @@
 
 **Verifikasi:**
 - Buka hallowa.id di Chrome → Network tab → filter "facebook"
-- Harus ada request ke `https://www.facebook.com/tr/?id=1382447226543529&ev=PageView...`
+- Harus ada request ke `https://www.facebook.com/tr/?id=PIXEL_ID_BARU&ev=PageView...`
 - Atau install [Meta Pixel Helper Chrome Extension](https://chrome.google.com/webstore/detail/meta-pixel-helper) → buka site → harus muncul ✅
 
 ---
@@ -148,7 +155,7 @@ if (typeof fbq !== 'undefined') {
 Meta hosts a server yang receive event browser-side dan forward server-side ke CAPI.
 
 **Setup:**
-1. Buka [Events Manager](https://business.facebook.com/events_manager/) → Pixel HalloWa (ID: 1382447226543529)
+1. Buka [Events Manager](https://business.facebook.com/events_manager/) → Pixel "HalloWa Pixel" (ID baru, cek di Events Manager)
 2. Klik **Settings** tab
 3. Scroll ke **Conversions API Gateway** section
 4. Klik **Set up Conversions API Gateway**
@@ -183,7 +190,7 @@ Tulis sendiri di backend hallowa.
 // File: src/lib/server/meta-capi.ts
 import crypto from 'crypto';
 
-const PIXEL_ID = '1382447226543529';
+const PIXEL_ID = process.env.META_PIXEL_ID; // Pixel HalloWa Pixel ID baru, set di env vars
 const ACCESS_TOKEN = process.env.META_CAPI_ACCESS_TOKEN; // get from Events Manager → Settings → API Access Token
 const TEST_EVENT_CODE = process.env.META_CAPI_TEST_CODE; // optional, for testing
 
