@@ -1,52 +1,86 @@
-# HalloWa FB Ads Setup Prompt
+# 🤖 AI Prompts Library
 
-Prompt template untuk setup Facebook Ads campaign untuk **hallowa.id** (B2B SaaS unified messaging platform) menggunakan AI assistant + skills/browser (Chrome DevTools Protocol).
+Kumpulan prompt siap pakai untuk berbagai task — copy, paste, eksekusi.
 
-## Konteks Bisnis
+## 📚 Daftar Prompt
 
-- **Produk**: SaaS unified messaging platform B2B
-- **Status**: Official Meta Business Partner
-- **Integrasi**: WhatsApp Business API, Instagram, Messenger, Threads
-- **Target**: UMKM sampai enterprise di Indonesia
-- **Pricing**: Free / Starter Rp199k / Pro Rp599k / Enterprise
+| Kategori | Prompt | Deskripsi |
+|---|---|---|
+| Marketing | [`iklan-fb-ads`](./iklan-fb-ads/) | Setup Facebook Ads campaign untuk hallowa.id (B2B SaaS) |
 
-## Campaign Parameters
+> _Akan terus bertambah seiring waktu._
 
-| Parameter | Value |
-|---|---|
-| Objective | Lead Generation / Trial Signup |
-| Budget harian | Rp 100.000 |
-| Durasi | 30 hari |
-| Total budget | Rp 3.000.000 |
-| Landing page | https://app.hallowa.id/register |
+## 🚀 Cara Pakai
 
-## Cara Pakai
+1. Buka folder prompt yang dibutuhkan (contoh: [`iklan-fb-ads`](./iklan-fb-ads/))
+2. Baca `README.md` di folder itu untuk konteks & cara pakai
+3. Copy isi `prompt.txt`:
+   - **Cara cepat:** klik file `prompt.txt` → klik tombol **Raw** → `Ctrl+A` → `Ctrl+C`
+   - **Atau:** klik tombol **Copy raw file** (icon di kanan atas saat lihat file)
+4. Paste ke sesi AI assistant baru sebagai pesan pertama
 
-1. Pastikan Chrome udah terbuka, akun FB & Business Manager udah login
-2. Pastikan payment method di Ads Manager udah aktif
-3. Buka sesi AI assistant baru (context bersih)
-4. Copy-paste isi [`PROMPT.md`](./PROMPT.md) sebagai pesan pertama
-5. AI akan pandu step-by-step lewat skills/browser
+## 📁 Struktur
 
-## Prinsip Keamanan
+```
+ai-prompts/
+├── README.md                  ← file ini (index)
+├── iklan-fb-ads/
+│   ├── README.md              ← konteks & instruksi spesifik
+│   └── prompt.txt             ← prompt siap copy
+└── [kategori-lain]/
+    ├── README.md
+    └── prompt.txt
+```
 
-- ✅ Pandu step-by-step, bukan auto-pilot
-- ✅ User yang klik final "Publish Campaign"
-- ✅ User yang verify payment method
-- ✅ Setiap keputusan strategis butuh approval user
-- ❌ JANGAN auto-publish
-- ❌ JANGAN share credential di chat
+## 🆕 Konvensi Naming
 
-## File
+Tiap prompt baru dibikin sebagai **folder sendiri** di root, dengan nama kebab-case yang deskriptif:
 
-- [`prompt.txt`](./prompt.txt) — **Plain text, paling gampang di-copy** (buka raw view → Ctrl+A → Ctrl+C)
-- [`PROMPT.md`](./PROMPT.md) — Versi markdown dengan code block (klik tombol copy di pojok kanan atas code block)
+- ✅ `iklan-fb-ads/`
+- ✅ `seo-content-writer/`
+- ✅ `meta-business-verification/`
+- ❌ `prompt1/`, `untitled/`, `IKLAN ADS FB/` (spasi/ambigu)
 
-## Quick Copy Links
+Tiap folder **wajib** punya:
+- `README.md` — konteks bisnis, parameter, mode kerja
+- `prompt.txt` — prompt plain text siap copy
 
-- **Raw plain text**: https://raw.githubusercontent.com/zesbe/hallowa-fbads-prompt/main/prompt.txt
-- **GitHub view**: https://github.com/zesbe/hallowa-fbads-prompt/blob/main/prompt.txt
+Optional:
+- `examples/` — screenshot hasil eksekusi
+- `variants/` — variasi prompt untuk skenario berbeda
 
-## License
+## 📝 Template Prompt Baru
 
-Personal use template.
+Saat bikin prompt baru, struktur idealnya:
+
+```
+═══ KONTEKS ═══
+(Bisnis, produk, tujuan)
+
+═══ TUJUAN ═══
+(Goal yang spesifik & measurable)
+
+═══ PARAMETER ═══
+(Budget, durasi, target, dll)
+
+═══ MODE KERJA ═══
+(Step-by-step / auto / interactive)
+(Mana yang perlu approval user)
+
+═══ WORKFLOW ═══
+(Urutan eksekusi yang diharapkan)
+
+═══ OUTPUT ═══
+(Format hasil yang diharapkan)
+```
+
+## 🔒 Keamanan
+
+- ❌ Jangan masukin **credential** (token, password, API key) ke prompt apa pun
+- ❌ Jangan delegasi keputusan **finansial / legal** ke AI tanpa approval
+- ✅ Selalu mode "pandu step-by-step" untuk task yang bisa berdampak (publish, deploy, transfer)
+- ✅ User pegang keputusan final di moment kritis
+
+---
+
+_Maintained by [@zesbe](https://github.com/zesbe)_
