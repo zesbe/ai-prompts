@@ -1,0 +1,349 @@
+Tolong susun & eksekusi strategi SEO + GEO komprehensif untuk hallowa.id agar muncul di hasil pencarian Google DAN AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Overviews) untuk query relevan di pasar Indonesia.
+
+═══ KONTEKS BISNIS ═══
+hallowa.id adalah SaaS unified messaging platform B2B di Indonesia.
+- Produk: integrasi WhatsApp Business API, Instagram, Messenger, Threads
+  dalam satu dashboard
+- Status: Official Meta Business Partner
+- USP utama: Unified inbox, AI auto-reply, multi-agent, server Indonesia,
+  enterprise security (AES-256, 2FA, SOC 2)
+- Target customer: UMKM sampai enterprise yang handle customer service
+  multi-channel
+- Model bisnis: Freemium → Starter Rp199k/bln → Pro Rp599k/bln →
+  Enterprise custom
+- Free trial: 14 hari semua paket berbayar
+- Landing page utama: https://app.hallowa.id/register
+- Site utama: https://hallowa.id
+- Bahasa: Indonesia (primary), English (secondary)
+
+═══ KOMPETITOR YANG HARUS DI-BENCHMARK ═══
+Tier 1 (lokal Indonesia, paling kuat):
+- Mekari Qontak (qontak.com) — pemain terbesar B2B SaaS messaging Indonesia
+- Qiscus (qiscus.com) — official BSP, banyak konten teknis
+- Wati.io — fokus WhatsApp Business API Indonesia
+
+Tier 2 (regional/global yang aktif di Indonesia):
+- YCloud (ycloud.com)
+- 360Dialog
+- Bird CRM
+- Zoko, Trengo, Verloop.io
+
+Tolong analisis untuk masing-masing kompetitor:
+- Domain authority & referring domains
+- Top ranking keywords (Indonesian language)
+- Content topics yang sering di-publish
+- Schema markup yang dipakai
+- Strategi backlink
+- Apakah mereka muncul di AI search citations
+- Gap yang bisa di-exploit hallowa.id
+
+═══ FASE STRATEGI SEO ═══
+
+FASE 1 — DISCOVERY & AUDIT (estimasi 2-3 hari)
+1. Technical SEO audit hallowa.id:
+   - Cek crawlability, indexability, robots.txt, sitemap.xml
+   - Core Web Vitals (LCP, FID/INP, CLS) via PageSpeed Insights
+   - Mobile-friendliness, security (HTTPS, HSTS)
+   - Schema markup yang udah ada (cek dengan curl/view-source)
+   - Hreflang kalau ada versi multi-bahasa
+   - Internal linking structure
+   - Status FB Pixel, Google Analytics, Google Search Console
+2. Content audit existing:
+   - List semua page yang ada (homepage, fitur, harga, blog, dll)
+   - Identifikasi gap konten (tipikal B2B SaaS punya blog, comparison
+     pages, alternatives pages, glossary, case studies)
+3. Backlink audit:
+   - Profil link saat ini (kalau ada akses ke Ahrefs/SEMrush via API)
+   - Toxic links yang perlu disavow
+
+DELIVERABLE FASE 1: Audit report dengan severity levels (critical/high/
+medium/low) + quick wins yang bisa dieksekusi minggu pertama.
+
+═══════════════════════════════════════════════════
+
+FASE 2 — KEYWORD RESEARCH & STRATEGY (estimasi 2-3 hari)
+1. Identifikasi keyword clusters Indonesian-language untuk:
+   - TOFU (awareness): "apa itu whatsapp business api", "cara reply
+     pelanggan whatsapp otomatis", "platform customer service indonesia"
+   - MOFU (consideration): "whatsapp business api indonesia",
+     "platform omnichannel indonesia", "aplikasi cs multi channel",
+     "unified inbox whatsapp instagram"
+   - BOFU (decision): "harga whatsapp business api", "qontak vs qiscus",
+     "wati alternatif", "[brand] vs [brand]" comparison pages
+2. Long-tail opportunities (low competition, high intent):
+   - "whatsapp business api untuk umkm"
+   - "auto reply whatsapp dengan ai"
+   - "broadcast whatsapp anti banned"
+   - "integrasi instagram whatsapp messenger"
+3. Local SEO keywords (Indonesia-specific):
+   - "whatsapp business api jakarta"
+   - "platform cs server indonesia"
+   - Compliance/regulasi: "aman PDP", "compliant UU PDP"
+4. Question-based keywords (penting untuk GEO/AI citation):
+   - "platform whatsapp business api terbaik di indonesia"
+   - "alternatif qontak"
+   - "berapa harga whatsapp business api"
+   - "apakah whatsapp business api gratis"
+5. Branded keyword protection:
+   - "hallowa", "hallowa.id", "hallowa review", "hallowa vs qontak"
+
+DELIVERABLE FASE 2: Spreadsheet keyword strategy dengan kolom:
+keyword | volume | difficulty | intent | funnel stage | target page |
+priority | competitor ranking
+
+═══════════════════════════════════════════════════
+
+FASE 3 — ON-PAGE OPTIMIZATION (estimasi 3-5 hari)
+1. Homepage:
+   - Title tag (max 60 char) yang include primary keyword
+   - Meta description (max 155 char) dengan CTA
+   - H1 yang clear (1 per page)
+   - Alt text semua gambar
+   - Internal links ke pricing, features, blog
+2. Pricing page:
+   - FAQ schema markup
+   - Comparison-friendly format (tabel struktur)
+3. Features pages (bikin per fitur):
+   - /fitur/whatsapp-business-api
+   - /fitur/instagram-business-inbox
+   - /fitur/messenger-integration
+   - /fitur/threads-scheduler
+   - /fitur/ai-auto-reply
+   - /fitur/multi-agent
+4. Comparison/alternatives pages (BOFU money pages — PRIORITAS TINGGI):
+   - /vs/qontak — "HalloWa vs Mekari Qontak"
+   - /vs/qiscus — "HalloWa vs Qiscus"
+   - /vs/wati — "HalloWa vs Wati"
+   - /alternatif/qontak — "Alternatif Qontak"
+   - /alternatif/qiscus — "Alternatif Qiscus"
+5. Glossary pages (topical authority):
+   - /glossary/whatsapp-business-api
+   - /glossary/omnichannel
+   - /glossary/cs-multichannel
+
+DELIVERABLE FASE 3: List semua page baru/yang harus diupdate, dengan
+draft title, meta description, H1, dan outline H2/H3 per page.
+
+═══════════════════════════════════════════════════
+
+FASE 4 — TECHNICAL SEO & SCHEMA (estimasi 2-3 hari)
+1. Schema markup wajib (JSON-LD):
+   - Organization (logo, sameAs, contact)
+   - SoftwareApplication (untuk pricing page)
+   - Product / Offer (per pricing tier)
+   - FAQPage (homepage + pricing)
+   - BreadcrumbList (semua sub-page)
+   - Review/AggregateRating (kalau ada testimonial)
+   - HowTo (untuk tutorial blog post)
+2. Sitemap.xml & robots.txt optimization
+3. Core Web Vitals fixes (kalau ada issue):
+   - Lazy loading images
+   - CSS/JS minification
+   - Font display swap
+   - Preconnect/preload critical resources
+4. Mobile-first checks
+5. Hreflang setup kalau mau target Bahasa Inggris juga
+
+DELIVERABLE FASE 4: List schema markup yang perlu di-implement +
+kode JSON-LD siap pakai untuk dev tinggal paste.
+
+═══════════════════════════════════════════════════
+
+FASE 5 — CONTENT STRATEGY (ongoing, mulai minggu 2)
+Editorial calendar 12 minggu pertama, fokus pada:
+
+A. Pillar content (long-form, 2000+ kata, target high-volume keyword):
+   - "Panduan Lengkap WhatsApp Business API untuk Bisnis di Indonesia"
+   - "Apa itu Omnichannel Customer Service? (Panduan 2026)"
+   - "Cara Pilih Platform Unified Messaging untuk Bisnis"
+
+B. Cluster content (medium-form, support pillar):
+   - "10 Fitur WhatsApp Business API yang Harus Anda Tahu"
+   - "Cara Setup AI Auto-Reply WhatsApp dalam 5 Menit"
+   - "Multi-Agent WhatsApp: Cara Tim CS Lo Bisa Handle 1000 Chat/Hari"
+
+C. Comparison content (BOFU, high conversion):
+   - "Mekari Qontak vs HalloWa: Perbandingan 2026"
+   - "Qiscus vs HalloWa: Mana yang Lebih Cocok untuk UMKM?"
+   - "5 Alternatif Wati untuk Bisnis Indonesia"
+
+D. How-to / tutorial (low-competition, high-utility):
+   - "Cara Verifikasi WhatsApp Business API (Step-by-Step)"
+   - "Cara Setup Broadcast WhatsApp Tanpa Banned"
+   - "Cara Integrasi WhatsApp dengan Shopee/Tokopedia"
+
+E. Industry/use case pages:
+   - "WhatsApp Business untuk E-commerce"
+   - "WhatsApp Business untuk Klinik / Dokter"
+   - "WhatsApp Business untuk Sekolah / Bimbel"
+   - "WhatsApp Business untuk Real Estate"
+
+DELIVERABLE FASE 5: Editorial calendar 12 minggu dengan kolom:
+week | content type | title | target keyword | word count target |
+internal links | CTA | author
+
+═══════════════════════════════════════════════════
+
+FASE 6 — GEO (GENERATIVE ENGINE OPTIMIZATION) — KRUSIAL UNTUK 2026
+Insight: 35-45% riset B2B sekarang dimulai di AI (ChatGPT, Perplexity,
+Gemini, Claude), bukan Google. AI-driven visitors convert 4.4x lebih
+tinggi dari organic search. Wajib optimize untuk AI citation.
+
+1. Content-Answer Fit:
+   - Setiap halaman/blog post harus punya direct answer di awal
+     (TL;DR atau answer box dalam 2-3 kalimat pertama)
+   - Pakai struktur Q&A yang jelas (FAQ format)
+   - Kalimat pendek, faktual, citable
+   - Hindari "fluff" / pengantar panjang
+
+2. Authority signals untuk AI citation:
+   - Quote sumber otoritatif (Meta official, riset, statistik)
+   - Sertakan author bio dengan kredibilitas
+   - Pasang Organization schema dengan sameAs ke Wikidata, LinkedIn,
+     Crunchbase
+   - Listing di directory B2B SaaS (G2, Capterra, GetApp, Sourceforge)
+   - PR & mention di media tier-1 Indonesia (Kontan, DailySocial,
+     TechInAsia, Katadata)
+
+3. Wikipedia / Wikidata entry:
+   - Create entitas hallowa.id di Wikidata
+   - Push untuk Wikipedia entry (kalau memenuhi notability)
+
+4. AI-friendly content patterns:
+   - Listicles dengan numbered lists
+   - Comparison tables dengan clear criteria
+   - Definition boxes
+   - Statistics dengan source attribution
+   - Step-by-step tutorials dengan ordered lists
+
+5. AI search visibility tracking:
+   - Manual probe weekly: tanya ChatGPT, Perplexity, Gemini, Claude
+     query target ("platform whatsapp business api terbaik di indonesia",
+     "alternatif qontak", dll) — track apakah hallowa.id muncul
+   - Catat: muncul / mention saja / dijadikan sumber utama
+
+DELIVERABLE FASE 6: GEO playbook + tracking spreadsheet untuk monitor
+AI citation di 4 platform (ChatGPT, Perplexity, Gemini, Claude).
+
+═══════════════════════════════════════════════════
+
+FASE 7 — LINK BUILDING & AUTHORITY (ongoing, mulai minggu 3)
+1. Foundation links (cepat, mudah):
+   - Listing G2, Capterra, GetApp, Software Advice, Sourceforge
+   - Listing direktori bisnis Indonesia (Kompasiana profil bisnis,
+     direktori UKM, direktori SaaS lokal)
+   - Profil di GitHub (kalau ada API/SDK), LinkedIn Page, Crunchbase
+2. Content-driven links:
+   - Original research / data study (contoh: "State of WhatsApp
+     Business in Indonesia 2026" — riset survey ke 1000 UMKM)
+   - Free tools (contoh: "WhatsApp Pricing Calculator", "Response Time
+     Benchmark Tool")
+   - Infografis tentang messaging trends
+3. Guest post & PR:
+   - Pitch ke DailySocial, TechInAsia, Katadata, Kontan
+   - Guest post di blog komunitas UKM (Komunitas TDA, Indorelawan,
+     Marketeers)
+4. Partnership links:
+   - Meta Business Partner directory listing (already!)
+   - Integration partner pages (Shopify, Tokopedia, Shopee, kalau ada)
+5. Strategic mention reclamation:
+   - Monitor "hallowa" / "halo wa" mention via Google Alerts
+   - Reach out ke yang mention tapi gak link → minta backlink
+
+DELIVERABLE FASE 7: Backlink target list 50+ domain prioritas dengan
+DA, contact email, pitch angle, status tracking.
+
+═══════════════════════════════════════════════════
+
+FASE 8 — MEASUREMENT & ITERATION (mulai minggu 4 dst)
+KPI utama yang harus tracked:
+- Organic traffic (Google Search Console)
+- Keyword rankings (track 50 target keyword utama)
+- AI citation rate (manual probe ChatGPT/Perplexity/Gemini/Claude)
+- Conversion rate organic → trial signup
+- Pipeline impact: lead → trial → paid customer dari organic
+- Domain authority growth (Ahrefs/Moz)
+- Indexed pages count
+- Average position Google
+- Click-through rate
+
+Baseline harus diambil di Week 1, di-review per 2 minggu untuk 3 bulan
+pertama, lalu monthly.
+
+DELIVERABLE FASE 8: Live dashboard / spreadsheet dengan auto-refresh
+data + monthly report template.
+
+═══════════════════════════════════════════════════
+
+═══ MODE KERJA ═══
+PANDU STEP-BY-STEP. Pakai skills yang relevan:
+- on-page-seo-auditor
+- technical-seo-checker
+- keyword-research
+- competitor-analysis
+- backlink-analyzer
+- content-gap-analysis
+- seo-content-writer
+- geo-content-optimizer (untuk AI search)
+- entity-optimizer (untuk Knowledge Graph)
+- schema-markup-generator
+- internal-linking-optimizer
+- meta-tags-optimizer
+- rank-tracker
+- performance-reporter
+
+Pakai juga skills/browser kalau perlu cek halaman live (kompetitor,
+hallowa.id, AI search results).
+
+Aturan:
+- Mulai dari Fase 1 (audit) — JANGAN langsung lompat ke konten
+- Tiap fase: kasih deliverable konkret sebelum lanjut fase berikutnya
+- Tunggu approval gue di akhir tiap fase
+- Kalau ada keputusan strategis (target keyword, content angle,
+  link building tactic), tanya gue dulu jangan asumsi
+- Dokumentasikan semua di file markdown / spreadsheet — gue mau bisa
+  share ke tim
+- Prioritas: quick wins dulu (yang bisa eksekusi minggu pertama)
+  baru long-term initiative
+
+═══ DATA YANG TERSEDIA ═══
+- Akses ke hallowa.id (live site)
+- Kompetitor URL: qontak.com, qiscus.com, wati.io, ycloud.com
+- Belum tau status: Google Search Console, Google Analytics 4,
+  Ahrefs/SEMrush subscription, internal CMS access
+- Kalau butuh akses ke tools premium yang gue belum punya, kasih
+  list dulu — gue cek mana yang bisa di-arrange
+
+═══ OUTPUT YANG GUE HARAPKAN ═══
+1. SEO master plan dokumen (single source of truth, format markdown)
+2. Per fase: deliverable file terpisah (audit report, keyword
+   spreadsheet, content calendar, schema markup, backlink target list,
+   GEO playbook, KPI dashboard template)
+3. Quick wins checklist minggu pertama (yang bisa eksekusi tanpa
+   nunggu fase berikutnya)
+4. Risk register: hal yang bisa gagal + mitigasi
+5. Timeline 3-6-12 bulan dengan milestone yang jelas
+
+═══ TIMELINE EKSPEKTASI ═══
+- Minggu 1: Audit + quick wins
+- Minggu 2-4: Keyword strategy + on-page + technical fixes
+- Bulan 2-3: Content production + GEO + link building
+- Bulan 4-6: Scale content, monitor rankings, iterate
+- Bulan 6-12: Maintain & expand topical authority
+
+Realistic: hasil signifikan (traffic + ranking) di bulan 4-6.
+Quick wins (technical fixes, schema, comparison pages indexed) bisa
+keliatan di bulan 1.
+
+═══ KONTEKS RISET 2026 (DATA POINTS PENTING) ═══
+- 35-45% riset B2B sekarang dimulai di AI search, bukan Google
+- 94% B2B buyer pakai LLM dalam purchase journey
+- AI Overviews turunin CTR Google -61% di query yang kena AI Overview
+- AI-referred visitors convert 4.4x lebih tinggi dari organic search
+- Authority threshold: site dengan 32k+ referring domains 3.5x lebih
+  sering dijadikan sumber AI citation
+- Search volume tradisional diprediksi turun -25% by end of 2026
+- Wajib optimize untuk dual discovery: Google + AI search engines
+
+Jadi strategi gak boleh cuma "SEO klasik" — harus integrated dengan
+GEO sejak hari pertama.

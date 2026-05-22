@@ -7,6 +7,7 @@ Kumpulan prompt siap pakai untuk berbagai task — copy, paste, eksekusi.
 | Kategori | Prompt | Deskripsi |
 |---|---|---|
 | Marketing | [`iklan-fb-ads`](./iklan-fb-ads/) | Setup Facebook Ads campaign untuk hallowa.id (B2B SaaS) |
+| SEO | [`seo-hallowa`](./seo-hallowa/) | Strategi SEO + GEO komprehensif (8 fase) untuk hallowa.id muncul di Google & AI search |
 
 > _Akan terus bertambah seiring waktu._
 
